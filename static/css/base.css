@@ -20,14 +20,14 @@ they will always stay perfectly centred and have a conststent size*/
     width: 1.5rem;
 }
 
+.container {
+    text-align: center;
+}
+
 /* -----------------------Logo */
 
 .logo-font {
     text-transform: uppercase;
-}
-
-.container {
-    text-align: center;
 }
 
 .main-logo-link {
