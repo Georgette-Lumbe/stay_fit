@@ -1,0 +1,50 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "dumbells & weight",
+        "friendly_name": "Dumbells & Weight"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "bike",
+        "friendly_name": "Bike"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+    }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "Bands",
+        "friendly_name": "Resistance"
+    }
+}, {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+        "name": "Leggings, trainers, etc",
+        "friendly_name": "Clothing"
+    }
+}, {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+    }
+}]
