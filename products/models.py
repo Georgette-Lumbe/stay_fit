@@ -9,6 +9,7 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
     name = models.CharField(max_length=260)
     friendly_name = models.CharField(max_length=260, null=True, blank=True)
+    objects = models.Manager()  # Object member
 
     def __str__(self):
         return str(self.name)

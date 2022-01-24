@@ -2,7 +2,7 @@
     "pk": 1,
     "model": "products.category",
     "fields": {
-        "name": "dumbells & weight",
+        "name": "dumbells_weight",
         "friendly_name": "Dumbells & Weight"
     }
 }, {
@@ -30,14 +30,14 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "Bands",
-        "friendly_name": "Resistance"
+        "name": "bands",
+        "friendly_name": "Bands"
     }
 }, {
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "Leggings, trainers, etc",
+        "name": "clothing",
         "friendly_name": "Clothing"
     }
 }, {

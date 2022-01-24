@@ -17,20 +17,20 @@
                 Strength and Cardio
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cardio-link">
-                <a href="" class="dropdown-item">Dumbells & Weight</a>
-                <a href="" class="dropdown-item">Bike ERG</a>
-                <a href="" class="dropdown-item">All Strength & Cardio</a>
+                <a href="{% url 'products' %}?category=d=dumbbells_weight" class="dropdown-item">Dumbbells &amp; Weight</a>
+                <a href="{% url 'products' %}?category=bike" class="dropdown-item">Bike</a>
+                <a href="{% url 'products' %}?category=dumbbells,weight,bike" class="dropdown-item">All Strength &amp; Cardio</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="resistance-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Resistance and Clothing
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clothing 
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="resistance-link">
-                <a href="" class="dropdown-item">Bands</a>
-                <a href="" class="dropdown-item">Leggings, trainers, etc</a>
-                <a href="" class="dropdown-item">All Resistance & Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="cardio-link">
+                <a href="{% url 'products' %}?category=d=bands" class="dropdown-item">Bands</a>
+                <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=bands, clothing" class="dropdown-item">All</a>
             </div>
         </li>
 
@@ -39,10 +39,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=d=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=d=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=d=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=d=new_arrivals,clearance,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
