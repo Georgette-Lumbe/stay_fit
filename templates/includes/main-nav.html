@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item ">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item ">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -19,7 +19,6 @@
             <div class="dropdown-menu border-0" aria-labelledby="cardio-link">
                 <a href="{% url 'products' %}?category=d=dumbbells_weight" class="dropdown-item">Dumbbells &amp; Weight</a>
                 <a href="{% url 'products' %}?category=bike" class="dropdown-item">Bike</a>
-                <a href="{% url 'products' %}?category=dumbbells,weight,bike" class="dropdown-item">All Strength &amp; Cardio</a>
             </div>
         </li>
 
@@ -30,7 +29,6 @@
             <div class="dropdown-menu border-0" aria-labelledby="cardio-link">
                 <a href="{% url 'products' %}?category=d=bands" class="dropdown-item">Bands</a>
                 <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
-                <a href="{% url 'products' %}?category=bands, clothing" class="dropdown-item">All</a>
             </div>
         </li>
 
