@@ -30,8 +30,8 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "bands",
-        "friendly_name": "Bands"
+        "name": "resistance_bands",
+        "friendly_name": "Resistance Bands"
     }
 }, {
     "pk": 6,
