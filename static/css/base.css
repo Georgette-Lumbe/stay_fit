@@ -181,6 +181,10 @@ they will always stay perfectly centred and have a conststent size*/
     }
 }
 
+/*.qty_input {
+    width: 10px
+}*/
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
