@@ -1,4 +1,4 @@
-# Stay
+# Stay Fit
 
 <img src="" width="100%" alt="responsive_image">
 
@@ -36,3 +36,12 @@ The live website can be viewed [here]()
 10. [Acknowledgements](#Acknowledgements)
 
 ---
+
+# INTRODUCTION
+
+Stay Fit is a eCommerce website where can be find some of materials and clothing for fitness lovers. Users can views all products and all special offers that the website provides. They can view in detail the product that they're interested, add multiple time products in their basket, see the total before the checkout, enter their personnal information. Users can create an account and see their profile with all personal information.
+
+There are many other site features which will be discussed in depth later on in this document.
+
+This is the last of five milestone projects that the developer is required to complete as part of their full web development course at the Code Institute.
+
