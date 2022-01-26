@@ -1,1 +1,1 @@
-web: gunicorn stayfit.wsgi:application
+web: gunicorn stay_fit.wsgi:application
