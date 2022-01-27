@@ -77,7 +77,7 @@ This is the last of five milestone projects that the developer is required to co
 
 # Testing
 
-Testing information can be found in a separate [testing file]().
+Testing information can be found in a separate [testing file](https://github.com/Georgette-Lumbe/stay_fit/blob/main/TESTING.md).
 
 # Web Marketing
 
@@ -97,6 +97,10 @@ The developper met some issues during the development of the website, below are 
     * When the site was deployed, the developper get this error `An error occurred in the application and your page could not be served. If you are the application owner, check your logs for details. You can do this from the Heroku CLI with the command heroku logs --tail`, for resolving this, the developper deplaced the Procfile to the root and updated the Procfile content which had a spelling mistake.
 
 3. 
+
+4. Sign Up to aws amazon console
+
+    * 
 
 # Deployment
 
