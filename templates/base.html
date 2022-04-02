@@ -130,7 +130,9 @@
                             {% endif %}
                             <a class="navbar-item menu m-3" href="#" title="view shopping bag">
                                 <figure>
-                                    <img src="#" alt="icon for the shopping bag here" class="bag-icon">
+                                    <i class="fa-solid fa-bag-shopping"><a class="navbar-item" href="#" title="Link to shopping bag"></a></i>
+                                    <!--<img src="{{ MEDIA_URL }}bag.png" alt="icon for the shopping bag here" class="bag-icon">-->
+                                   
                                     <figcaption>
                                         <p>{% if total %}
                                             £{{ total|floatformat:2 }}
@@ -221,8 +223,8 @@
                                     </div>
                                 </div>
                                 {% endif %}
-                                <a class="navbar-item" href="#" title="Link to shopping bag">
-                                    <img src="#" alt="bag-icon" class="mobile-icon">
+                                <i class="fa-solid fa-bag-shopping"><a class="navbar-item" href="#" title="Link to shopping bag"></a></i>
+                                    <!--<img src="{{ MEDIA_URL }}bag.png" alt="bag-icon" class="mobile-icon">-->
                                     {% if grand_total %}
                                     £{{ grand_total|floatformat:2 }}
                                     {% else %}
