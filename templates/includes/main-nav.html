@@ -17,9 +17,9 @@
                 Equipments
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="equipments-link">
-                <a href="" class="dropdown-item">Dumbells</a>
-                <a href="" class="dropdown-item">Resistance</a>
-                <a href="" class="dropdown-item">Machine</a>
+                <a href="{% url 'products' %}?category=dumbells" class="dropdown-item">Dumbells</a>
+                <a href="{% url 'products' %}?category=resistance" class="dropdown-item">Resistance</a>
+                <a href="{% url 'products' %}?category=machine" class="dropdown-item">Machine</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Sportswears
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="sportswears-link">
-                <a href="" class="dropdown-item">Leggings</a>
-                <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">Sets</a>
+                <a href="{% url 'products' %}?category=leggings" class="dropdown-item">Leggings</a>
+                <a href="{% url 'products' %}?category=shorts" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=sets" class="dropdown-item">Sets</a>
             </div>
         </li>
 
@@ -39,9 +39,9 @@
                 Trainers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="trainers-link">
-                <a href="" class="dropdown-item">Men</a>
-                <a href="" class="dropdown-item">Women</a>
-                <a href="" class="dropdown-item">New</a>
+                <a href="{% url 'products' %}?category=men" class="dropdown-item">Men</a>
+                <a href="{% url 'products' %}?category=women" class="dropdown-item">Women</a>
+                <a href="{% url 'products' %}?category=new" class="dropdown-item">New</a>
             </div>
         </li>
     </ul>
