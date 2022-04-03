@@ -96,7 +96,17 @@ The developper met some issues during the development of the website, below are 
     * When trying to push the code to Heroku master, the developper get this error `error: src refspec master does not match any`, the developper find the solution to [this post](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1629563663371100?thread_ts=1629559227.368300&cid=C7HS3U3AP) on Slack. 
     * When the site was deployed, the developper get this error `An error occurred in the application and your page could not be served. If you are the application owner, check your logs for details. You can do this from the Heroku CLI with the command heroku logs --tail`, for resolving this, the developper deplaced the Procfile to the root and updated the Procfile content which had a spelling mistake.
 
-3. 
+3. Load products data
+
+    * When trying to load products data by using: `python3 manage.py makemigrations --dry-run`, `python3 manage.py migrate --plan`, `python3 manage.py loaddata products`, the code was breaking. And I get this error: `django.db.utils.OperationalError: Problem installing fixture '/workspace/stay_fit/products/fixtures/products.json': Could not load products.Product(pk=1): no such column: colour`.
+
+    * I get a help from Ger_ci and follow these steps: 
+        - `python3 manage.py migrate products zero`
+        - `python3 manage.py makemigrations`
+        - `python3 manage.py migrate`
+        - `python3 manage.py loaddata categories`
+        - `python3 manage.py loaddata products`
+
 
 4. Sign Up to aws amazon console
 

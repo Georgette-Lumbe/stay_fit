@@ -22,7 +22,7 @@
        "fields":{
           "sku":"pp5007310221",
           "name":"Water Dumbells",
-          "colour":"Pink, Light Blue",
+          "colour":"Pink and light-blue",
           "description":"PDumbbells and water bottle, plastic, for crossfit and yoga, bodybuilding accessories, sports equipment",
           "has_sizes":false,
           "has_shoesizes":false,
@@ -39,7 +39,7 @@
        "fields":{
           "sku":"pp5007310222",
           "name":"Swim Dumbells",
-          "colour":"Pink, Green, Blue, Red",
+          "colour":"Pink, green, blue and red",
           "description":"Aerobic Swim Dumbbell, 1 piece, Yoga exercise equipment",
           "has_sizes":false,
           "has_shoesizes":false,
@@ -73,7 +73,7 @@
        "fields":{
           "sku":"pp5007310224",
           "name":"Matte dumbells",
-          "colour":"Purple, Blue",
+          "colour":"Purple and blue",
           "description":"Home weightlifting equipment, hand weights, slimming, 2 pieces of 0.5kg and 1kg",
           "has_sizes":false,
           "has_shoesizes":false,
@@ -107,7 +107,7 @@
        "fields":{
           "sku":"pp5007310226",
           "name":"Mayamo Bands",
-          "colour":"Black, Green, Blue, Red, Yellow",
+          "colour":"Black, green, blue, red and yellow",
           "description":"Elastic Latex Resistance Bands, Fitness Equipment, Yoga, Pilates, Traction Belt",
           "has_sizes":false,
           "has_shoesizes":false,
@@ -124,7 +124,7 @@
        "fields":{
           "sku":"pp5007310227",
           "name":"Rubber Bands",
-          "colour":"Pink, Green, Blue, Red",
+          "colour":"Pink, green, blue and red",
           "description":"Latex elastic resistance bands, fitness equipment, strength training, Crossfit, rubber",
           "has_sizes":false,
           "has_shoesizes":false,
@@ -141,7 +141,7 @@
         "fields":{
            "sku":"pp5007310228",
            "name":"Krat Bands",
-           "colour":"Yellow, Green, Blue, Red",
+           "colour":"Yellow, green, blue and red",
            "description":"Elastic resistance bands made of stretchable rubber, 120cm, fitness equipment, yoga, exercise",
            "has_sizes":false,
            "has_shoesizes":false,
@@ -158,7 +158,7 @@
         "fields":{
            "sku":"pp5007310229",
            "name":"Fingers Stretch",
-           "colour":"Orange, Green, Blue",
+           "colour":"Orange, green and blue",
            "description":"Rubber resistance bands for fingers, fitness equipment, stretchable",
            "has_sizes":false,
            "has_shoesizes":false,
@@ -277,7 +277,7 @@
         "fields":{
            "sku":"pp5007310235",
            "name":"Amag",
-           "colour":"Blue, Black, Red",
+           "colour":"Blue, black and red",
            "description":"Women's fitness pants, printed leggings, high waist, for running, sports, jogging",
            "has_sizes":true,
            "has_shoesizes":false,
@@ -345,7 +345,7 @@
         "fields":{
            "sku":"pp5007310239",
            "name":"Corpulus",
-           "colour":"Dark Blue",
+           "colour":"Dark-blue",
            "description":"Women's Seamless Sport Legging, Fitness Pants, High Waist, Running Apparel, Training Apparel",
            "has_sizes":true,
            "has_shoesizes":false,
@@ -498,7 +498,7 @@
         "fields":{
            "sku":"pp5007310248",
            "name":"Keep Running",
-           "colour":"Black and White",
+           "colour":"Black and white",
            "description":"Men's vulcanized leather shoes, fashionable sneakers, flat, casual, breathable, leisure, non-slip, trendy, 2022",
            "has_sizes":false,
            "has_shoesizes":true,
@@ -532,7 +532,7 @@
         "fields":{
            "sku":"pp5007310250",
            "name":"Air",
-           "colour":"Black and Pink",
+           "colour":"Black and pink",
            "description":"Women's sport shoes, running sneakers, Tennis, Fitness, cheap",
            "has_sizes":false,
            "has_shoesizes":true,
