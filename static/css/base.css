@@ -73,8 +73,11 @@ body {
 }
 
 .text-colour {
-    color: rgb(106, 7, 219);
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.mr-1 {
+    color: rgb(206, 139, 14);
 }
 
 .product-card {
@@ -105,5 +108,20 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 175px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .mt-3, .my-3 {
+        margin-top: 3rem!important;
     }
 }
