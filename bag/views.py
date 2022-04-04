@@ -1,6 +1,6 @@
 """ Import """
 from django.shortcuts import (
-    render, redirect, get_object_or_404
+    render, redirect, reverse, get_object_or_404, HttpResponse
 )
 from django.contrib import messages
 
@@ -78,3 +78,98 @@ def add_to_bag(request, item_id):
 
     request.session["bag"] = bag
     return redirect(redirect_url)
+
+
+def adjust_bag(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
+
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get("quantity"))
+    size = None
+    shoesize = None
+    if "product_size" or "product_shoesize" in request.POST:
+        if "product_size" in request.POST:
+            size = request.POST.get("product_size", False)
+        else:
+            shoesize = request.POST.get("product_shoesize", False)
+    bag = request.session.get("bag", {})
+    if size or shoesize:
+        if size:
+            if quantity > 0:
+                bag[item_id]["items_by_size"][size] = quantity
+                messages.success(
+                    request, f'Updated {size.upper()} {product.name} quantity \
+                        to {bag[item_id]["items_by_size"][size]}'
+                )
+            else:
+                del bag[item_id]["items_by_size"][size]
+                if not bag[item_id]["items_by_size"]:
+                    bag.pop(item_id)
+                messages.success(request, f"Removed {size.upper()} \
+                    {product.name} from your bag")
+        else:
+            if quantity > 0:
+                bag[item_id]["items_by_shoesize"][shoesize] = quantity
+                messages.success(
+                    request,
+                    f'Updated {shoesize.capitalize()} {product.name} quantity \
+                        to {bag[item_id]["items_by_shoesize"][shoesize]}',
+                )
+            else:
+                del bag[item_id]["items_by_shoesize"][shoesize]
+                if not bag[item_id]["items_by_shoesize"]:
+                    bag.pop(item_id)
+                messages.success(request, f"Removed {shoesize.capitalize()} \
+                    {product.name} from your bag")
+    else:
+        if quantity > 0:
+            bag[item_id] = quantity
+            messages.success(request, f"Updated {product.name} quantity to \
+                {bag[item_id]}")
+        else:
+            bag.pop(item_id)
+            messages.success(request, f"Removed {product.name} from your bag")
+
+    request.session["bag"] = bag
+    return redirect(reverse("view_bag"))
+
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+
+    try:
+        product = get_object_or_404(Product, pk=item_id)
+        size = None
+        shoesize = None
+
+        if "product_size" or "product_shoesize" in request.POST:
+            if "product_size" in request.POST:
+                size = request.POST.get("product_size", False)
+            else:
+                shoesize = request.POST.get("product_shoesize", False)
+
+        bag = request.session.get("bag", {})
+        if size or shoesize:
+            if size:
+                del bag[item_id]["items_by_size"][size]
+                if not bag[item_id]["items_by_size"]:
+                    bag.pop(item_id)
+                messages.success(request, f"Removed {size.upper()} \
+                    {product.name} from your bag")
+            else:
+                del bag[item_id]["items_by_shoesize"][shoesize]
+                if not bag[item_id]["items_by_shoesize"]:
+                    bag.pop(item_id)
+                messages.success(request, f"Removed {shoesize.capitalize()} \
+                    {product.name} from your bag")
+
+        else:
+            bag.pop(item_id)
+            messages.success(request, f"Removed {product.name} from your bag")
+
+        request.session["bag"] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        messages.error(request, f"Error removing item: {e}")
+        return HttpResponse(status=500)
