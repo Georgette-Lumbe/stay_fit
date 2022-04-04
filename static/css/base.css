@@ -35,6 +35,11 @@ body {
     min-width: 260px;
 }
 
+.input-group {
+    width: 100px;
+    margin-left: 135px;
+}
+
 .btn-black {
     background: black;
     color: white;
@@ -106,7 +111,9 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-link {
     cursor: pointer;
 }
 
