@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Rubik+Wet+Paint&display=swap');
 
 html {
     height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik Wet Paint', sans-serif;
 }
 
 body {
