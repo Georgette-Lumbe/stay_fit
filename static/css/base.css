@@ -15,7 +15,7 @@ h6 {
 }
 
 body {
-    background: url('/media/booty_band.png') no-repeat center center fixed;
+    background: url('/media/women.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto Serif', sans-serif;
     height: calc(100vh - 164px);
@@ -80,7 +80,7 @@ body {
 }
 
 .bg-black {
-    background: #555 !important;
+    background: rgb(216, 4, 4) !important;
 }
 
 .overlay {
