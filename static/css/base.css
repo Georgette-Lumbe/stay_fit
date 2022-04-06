@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Rubik+Wet+Paint&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Rubik+Wet+Paint&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Rubik+Wet+Paint&display=swap');
 
 html {
     height: 100%;
@@ -16,7 +17,7 @@ h6 {
 body {
     background: url('/media/booty_band.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto Serif', sans-serif;
     height: calc(100vh - 164px);
     color: #555;
 }
