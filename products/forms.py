@@ -8,7 +8,7 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = [
             'category', 'sku', 'name', 'colour', 'description',
-            'has_sizes', 'has_shoesize', 'price', 'image_url', 'image'
+            'has_sizes', 'has_shoesizes', 'price', 'image_url', 'image'
             ]
 
     def __init__(self, *args, **kwargs):
