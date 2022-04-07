@@ -1,0 +1,21 @@
+<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group input-bag">
+            <input class="form-control form-control-sm qty_input" type="number"
+                name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                data-item_id="{{ item.item_id }}"
+                id="id_qty_{{ item.item_id }}">
+        </div>
+    </div>
+</form>
+<a class="update-link text-info">
+    <span>
+        <i class="fas fa-pen fa-sm"></i>
+    </span>
+</a>
+<a class="remove-item text-danger" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+    <span>
+        <i class="fas fa-trash fa-sm"></i>
+    </span>
+</a>
