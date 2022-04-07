@@ -86,34 +86,111 @@ The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/x
 
 
 #### **Desktop view**
-- [Home]()
-- [Register]()
-- [Login]()
-- [Profile-Orders]()
-- [Products]()
-- [Product-Detail]()
-- [Add-Product-To-Bag]()
-- [Processing-Payment]()
-- [Checkout]()
-- [Bag]()
-- [Confirmed-Order]()
+- Home
 
+    ![](static/docs/images/wireframes/desktop-home.png)
+
+- Register
+
+    ![](static/docs/images/wireframes/desktop-register.png)
+
+- Login
+
+    ![](static/docs/images/wireframes/desktop-login.png)   
+
+- Sign Out
+
+    ![](static/docs/images/wireframes/desktop-sign-out.png) 
+
+- Profile
+
+    ![](static/docs/images/wireframes/desktop-profile.png)
+
+- Checkout
+
+    ![](static/docs/images/wireframes/desktop-checkout.png)
+
+- Checkout Success
+
+    ![](static/docs/images/wireframes/desktop-checkout-success.png)
+
+- Products
+
+    ![](static/docs/images/wireframes/desktop-products.png)
+
+- Products Details
+
+    ![](static/docs/images/wireframes/desktop-product-details.png)
+
+- Product Management - Add Product
+
+    ![](static/docs/images/wireframes/desktop-product-management.png)
+
+- Profile
+
+    ![](static/docs/images/wireframes/desktop-profile.png)
+
+- Add product to bag
+
+    ![](static/docs/images/wireframes/desktop-add-bag.png)
+
+[Go to top](#introduction)
 
 #### **Mobile view**
 
-- [Home]()
-- [Register]()
-- [Login]()
-- [Profile]()
-- [Orders]()
-- [Edit-Profile]()
-- [Products]()
-- [Product-Detail]()
-- [Add-Product-To-Bag]()
-- [Processing-Payment]()
-- [Checkout]()
-- [bag]()
+- Home
 
+    ![](static/docs/images/wireframes/mobile-home.png)
+
+- Register
+
+    ![](static/docs/images/wireframes/mobile-register.png)
+
+- Login
+
+    ![](static/docs/images/wireframes/mobile-login.png)   
+
+- Sign Out
+
+    ![](static/docs/images/wireframes/mobile-sign-out.png)  
+
+- Profile
+
+    ![](static/docs/images/wireframes/mobile-profile.png)
+
+- Checkout
+
+    ![](static/docs/images/wireframes/mobile-checkout.png)
+
+- Checkout Success
+
+    ![](static/docs/images/wireframes/mobile-checkout-success.png)
+
+- Products
+
+    ![](static/docs/images/wireframes/mobile-products.png)
+
+- Products Details
+
+    ![](static/docs/images/wireframes/mobile-product-details.png)
+
+- Product Management - Add Product
+
+    ![](static/docs/images/wireframes/mobile-product-management.png)
+
+- Profile
+
+    ![](static/docs/images/wireframes/mobile-profile.png)
+
+- Add product to bag
+
+    ![](static/docs/images/wireframes/mobile-add-bag.png)
+
+- Bag
+
+    ![](static/docs/images/wireframes/mobile-bag.png)
+
+[Go to top](#introduction)
 
 # **Database Schema**
 
@@ -217,6 +294,7 @@ Header
 - The ability for users to change their username.
 - The ability to view, add comments, edit and delete their own blog posts.
 - A star rating or upvote functionality for the products and blog posts.
+- The ability to Review a comment.
 
 # **Responsive Design**
 
@@ -249,9 +327,7 @@ The site was designed to be mobile first as more users are using their handheld 
 
     The fonts were chosen to complement one another and also give the aesthetic to the website: [Rubik Wet Paint](https://fonts.google.com/specimen/Rubik+Wet+Paint?query=Rubik+Wet+Paint) used for all Headings and ['Roboto Serif', sans-serif](https://fonts.google.com/specimen/Roboto+Serif?query=roboto) used for the rest of body, as a contrasting font to help the cursive stand out and allow for extra readability when more information given.
 
-2. Colour Scheme
-
-3. Imagery
+2. Imagery
     * The main image used in the home page was originally obtained from [Unsplash](https://unsplash.com/)
     * All images used in this site was originally obtained from [Aliexpress](https://best.aliexpress.com/?af=2058828&cn=6814&cv=14000&dp=102cc0e598892ed4a074a0e1a788d9&aff_fcid=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&tt=CPS_NORMAL&aff_fsk=_ALwFAx&aff_platform=portals-tool&sk=_ALwFAx&aff_trace_key=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&terminal_id=f18636dfae2f448d8bb88a9965502843&afSmartRedirect=y)
 
@@ -289,25 +365,20 @@ The developper met some issues during the development of the website, below are 
         - `python3 manage.py loaddata categories`
         - `python3 manage.py loaddata products`
 
-
-4. Sign Up to aws amazon console
-
-    * 
-
-5. Stripe Currency
+4. Stripe Currency
 
     * The developper set the currency as EURO in settings.py and he gets this error which was usefull to know: `InvalidRequestError at /checkout/
 Request req_aPjY4IbnYrI832: Invalid currency: euro. Stripe currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bhd, bif, bmd, bnd, bob, brl, bsd, bwp, byn, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jod, jpy, kes, kgs, khr, kmf, krw, kwd, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, omr, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sll, sos, srd, std, szl, thb, tjs, tnd, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw, usdc, ghs, eek, lvl, svc, vef, ltl`
     * So, the developper changed EURO to EUR.
 
-6. Profile page
+5. Profile page
 
     * The developer was stuck with some points:
         - He created profiles app after the supersuser and one user was already created.
         - Each time that the superuser was trying to navigate through the profile page and tried to login ion the admin page, he got these errors: `RelatedObjectDoesNotExitat /admin/login/ - User has no userprofile`, `RelatedObjectDoesNotExitat /accounts/login/ - User has no userprofile`, and `Page not found`
         - With the help of Oisin_ci, the developer created new superuser and new user register, and delete all the old superuser and user.
 
-7. Migrations
+6. Migrations
 
     * The developper met this error: `You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): checkout. Run 'python manage.py migrate' to apply them.`
     * But each time that he tried to makemigrations and migrate, he get an another error `sqlite3.OperationalError: no such column: "product_weight`
@@ -320,12 +391,16 @@ Request req_aPjY4IbnYrI832: Invalid currency: euro. Stripe currently supports th
         - Run python3 manage.py migrate --plan
         - And then Run python3 manage.py migrate
 
-8. Pylint
+7. Pylint
 
     * To avoid many errors as "class has no member object", the developper via [this post](https://stackoverflow.com/questions/58255016/class-has-no-objects-member) was able to fix those errors. He changed the settings.JSON contents with this: `"python.linting.pylintArgs": [
     "--load-plugins=pylint_django",
     "--errors-only"],`
     * The above fix had to another error : "django was not configured. For more information run pylint ---load-plugins=pylint_django --help-msg=django-not-configured". And the developper visited [this post](https://stackoverflow.com/questions/65761250/pylint-django-raising-error-about-django-not-being-configured-when-thats-not-th)and this [video](https://www.youtube.com/watch?v=SXNLt6FRizc) to fix the problem.
+
+8. **Bugs non fixed**
+    	- Sub-titles in the Shopping bag are not on the same column with details.
+
 
 [Go to top](#introduction)
 
@@ -367,6 +442,8 @@ Before deploying the website to Heroku, the following five must be followed to a
 
 ## Deployment Steps
 
+The project was developed using [GitPod](https://gitpod.io/) and pushed to [GitHub](https://github.com/).
+
 Once the above steps are done, the website can be deployed in Heroku using the steps listed below:
 
 1. Log into Heroku .
@@ -383,15 +460,26 @@ Once the above steps are done, the website can be deployed in Heroku using the s
 4. Select the Hobby Dev-Free option in plans. 
 5. Click submit order form.
 
-## Manipulate the Workspace
+## Connecting to Heroku
 
-1. 
-2. 
-
-## Setting up environment variables
-
-1. 
-2. 
+1. Create a requirements.txt file using command *pip3 freeze > requirements.txt*
+2. Create a Procfile with the terminal command *web: gunicorn knit_happens.wsgi:application* and at this point checking the Procfile to make sure there is no extra blank line as this can cause issues when deploying to Heroku.
+3. Use the loaddata command to load the fixtures for both json files: *python3 manage.py loaddata categories.json* and *python3 manage.py loaddata products.json*
+4. If it returns error message: *django.db.utils.OperationalError: FATAL: role <somerandomletters> does not exist* run *unset PGHOSTADDR* in your terminal and run the commands in step 11 again.
+5. From the CLI log in to Heroku using command *heroku login -i*.
+6. Temporarily disable Collectstatic by running: *heroku:config:set DISABLE_COLLECTSTATIC=1 --app <heroku-app-name>* So that Heroku won't try to collect static files when we deploy.
+7. Add Heroku app name to ALLOWED_HOSTS in settings.py.
+8. Commit changes to GitHub using *git add .*, *git commit -m <commit message>*, *git push*.
+9. Then deploy to Heroku using *git push heroku main*
+If the git remote isn't initialised you may have to do that first by running *heroku git:remote -a <heroku-app-name>
+10. Create a superuser using command: *heroku run python3 manage.py createsuperuser* so that you can log in to admin as required.
+11. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+12. Search for your GitHub repo and connect then Enable Automatic Deploys.
+13. Generate secret key. Strong secret keys can be obtained from [MiniWebTool](https://miniwebtool.com/django-secret-key-generator/). This automatically generates a secret key 50 characters long with alphanumeric characters and symbols. 
+14. Add secret key to GitPod variables and Heroku config vars.
+15. Set up Amazon AWS S3 bucket using instructions [below](#amazon-aws)
+16. In the dashboard click "Settings" -> "Reveal Config Vars"
+17. Set [config vars](#config-vars) using advice below.
 
 ## Connect Heroku app to Github repository
 
@@ -408,6 +496,86 @@ Once the above steps are done, the website can be deployed in Heroku using the s
 2. In the Automatic deploys section, the main branch is enabled to deploy then click Enable Automation Deploys.
 
 [Go to top](#introduction)
+
+#### Amazon AWS
+
+1. Create Amazon AWS account and create a new bucket in the S3 services and choose your closest region.
+2. Uncheck block all public access and create bucket. 
+3. From Properties tab turn on static website hosting using default values of index.html and errors.html.
+4. On permissions tab include CORS configuration:
+```python
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+5. Create security policy: S3 Bucket Policy, allow all principles by adding a * and Amazon S3 services and selecting Get Object action. Paste ARN from Bucket Policy, add statement, generate policy and copy and paste into Bucket Policy. Also add /* at end of resource key to allow use of all pages. 
+6. Under public access select access to all List Objects. 
+
+7. Create Group for the bucket through IAM. Create policy by importing AWS S3 Full Access policy and add ARN from bucket to the policy resources. Attach policy to group. 
+8. Create user, give programmatic access and add user to the group. Download CSV file when prompted to save access key ID an secret access key to save to environment and config [variables](#config-vars).
+9. Add AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME = 'eu-west-2' to settings.py.
+10. Add, commit and push to GitHub then navigate to Heroku to confirm static files collected successfully on the Build Log. The DISABLE_COLLECTSTATIC variable can now be deleted. 
+
+#### **GMail Client**
+
+In `settings.py` change the `DEFAULT_FROM_EMAIL` to your own email address.
+
+1. Go to your Gmail account and navigate to the 'Settings' tab.
+2. Go to 'Accounts and Imports', 'Other Google Account Settings'.
+3. Go to the 'Security' tab, and scroll down to 'Signing in to Google'.
+4. If required, click to turn on '2-step Verification**', then 'Get Started', and enter your password.
+5. Verify using your preferred method, and turn on 2-step verification.
+6. Go back to 'Security', 'Signing in to Google', then go to 'App Passwords'.
+7. Enter your password again if prompted, then set 'App' to `Mail`, 'Device' to `Other`, and type in `Django`.
+8. Copy and paste the passcode that shows up, this is your '**EMAIL_HOST_PASS**' variable to add to your environment/config variables. '**EMAIL_HOST_USER**' is the Gmail email address.
+
+[Go to top](#introduction)
+
+### **Config Vars**
+
+The config/environment variables should be set up as follows:
+
+| Key                    | Value                      |
+| ---------------------- |--------------------------- |
+| PORT                   | 8000                       |
+| IP                     | 0.0.0.0                    |
+| SECRET_KEY             | YOUR_SECRET_KEY            |
+| STRIPE_PUBLIC_KEY      | STRIPE_PUBLIC_KEY          |
+| STRIPE_SECRET_KEY      | YOUR_STRIPE_SECRET_KEY     |
+| STRIPE_WH_SECRET       | STRIPE_WEBHOOKS_KEY        |
+| DATABASE_URL           | YOUR_POSTGRES_URL          |
+| AWS_ACCESS_KEY_ID      | YOUR_AWS_ACCESS_KEY_ID     |
+| AWS_SECRET_ACCESS_KEY  | YOUR_AWS_SECRET_ACCESS_KEY |   
+| USE_AWS                | True                       |
+| EMAIL_HOST_PASS        | YOUR_EMAIL_HOST_PASSCODE   |
+| EMAIL_HOST_USER        | YOUR_EMAIL_HOST_USERNAME   |
+
+
+#### Where to find Config Var Key-value Pairs 
+
+To find the values of each key:
+
+- SECRET_KEY: This is a random string provided when creating the Django project and can easily be changed to ensure extra security. 
+- DATABASE_URL: This is temporary.
+- STRIPE_PUBLIC_KEY: Retrived from Stripe Dashboard in the Developer's API section (Publishable key).
+- STRIPE_SECRET_KEY: Retrived from Stripe Dashboard in the Developer's API section (Secret key)
+- STRIPE_WH_SECRET: Retrived from Stripe Dashboard in the Developer's after creating an endpoint for your webhook (Signing secret).
+- EMAIL_HOST_USER: Your email address or username. [See below for instructions](#smtp-setup).
+- EMAIL_HOST_PASS: Your passcode from your email client. [See below for instructions](#smtp-setup).
+- AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
+- AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3. [See below for instructions](#amazon-aws).
+
 
 ## Making a clone to run locally
 
@@ -443,20 +611,28 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     The following Python modules were used on this project:
     - asgiref==3.4.1
     - backports.zoneinfo==0.2.1
+    - boto3==1.21.35
+    - botocore==1.24.35
     - dj-database-url==0.5.0
-    - Django==3.2.11
+    - Django==3.2
     - django-allauth==0.41.0
     - django-countries==7.2.1
     - django-crispy-forms==1.14.0
+    - django-storages==1.12.3
     - gunicorn==20.1.0
+    - jmespath==1.0.0
     - oauthlib==3.1.1
     - Pillow==9.0.0
     - psycopg2-binary==2.9.3
+    - pylint-django==2.5.3
+    - pylint-plugin-utils==0.7
     - python3-openid==3.2.0
     - pytz==2021.3
     - requests-oauthlib==1.3.0
+    - s3transfer==0.5.2
     - sqlparse==0.4.2
     - stripe==2.65.0
+    - unicorn==1.0.3
 2. [Django](https://docs.djangoproject.com/en/3.1/)
     - Django was used as the main python framework in the building of this project.
 3. [jQuery](https://jquery.com/)
