@@ -52,10 +52,10 @@ This is the last of five milestone projects that the developer is required to co
 | User Story ID  | As a/an  | I want to be able to...  | So that I can... |
 |---|---|---|---|
 | Viewing Products & Navigation |
-| 1  | User/Shopper | select and view individual products | view a larger image of product, description, price, review, and a purchase option. |
+| 1  | User/Shopper | select and view individual products | view a larger image of product, description, price, and a purchase option. |
 | 2  |   | be able to add, edit quantity and remove items from my bag | buy them if after browsing. |
 | 3  |   | view a specific category of products | quickly find products I'm interested in without having to search through all products. |
-| 4  |   | select and view individual product details | view a larger image of product, description, price, review, and a purchase option. |
+| 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. |
 | Registration and Accounts |
 | 5  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. |
 | 6  |   | recover my account if password forgot  | gain access to my account. |
@@ -688,6 +688,8 @@ Once the project been loaded into the IDE it is necessary to install the necessa
   - Used to research and choose the colour scheme by comparing and contrasting similar colours in the generator.
 28. [Stripe](https://dashboard.stripe.com/)
     - Used to implement the payment method
+29. [Temp Mail](https://temp-mail.org/fr/view/624f22d6022f80072a9eb41a)
+    - Used to generate an email
 
 ---
 
