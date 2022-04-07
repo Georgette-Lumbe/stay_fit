@@ -11,7 +11,7 @@ class ProductForm(forms.ModelForm):
             'category', 'sku', 'name', 'colour', 'description',
             'has_sizes', 'has_shoesizes', 'price', 'image_url', 'image'
             ]
-    
+
     image = forms.ImageField(label='Image',
                              required=False,
                              widget=CustomClearableFileInput)

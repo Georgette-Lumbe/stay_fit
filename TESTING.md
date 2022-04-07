@@ -1,4 +1,4 @@
-# Trainee Portal - Testing
+# Stay Fit - Testing
 
 [Main README.md file](https://github.com/Georgette-Lumbe/stay_fit/blob/main/README.md)
 
@@ -188,6 +188,27 @@ The site was tested on these devices:
 # Automated Testing
 
 ## Code Validation
+
+#### **HTML Validator**
+HTML validator was used for all pages and only five minor erros  about the use of li, nav, div elements. 
+- [Templates-html1](static/docs/images/validation/templates-html1.png)
+- [Templates-html2](static/docs/images/validation/templates-html2.png)
+
+#### **CSS Jigsaw**
+CSS Jigsaw validation passed for all pages
+- [checkout.css](static/docs/images/validation/checkout-css.png)
+- [base.css](static/docs/images/validation/base-css.png)
+
+#### **PEP8**
+-  Checkout [signals](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1642780620039300) imported but not used in problems tab however this is required as it is being accessed elsewhere so the problem can be ignored. 
+- Settings.py, env import but unused
+
+[With all Python files open](static/docs/images/validation/pep8.png) those are the only two issues.
+
+#### **JSHint**
+JavaScript JSHint validator passed for all pages
+- [stripe_elements.js](static/docs/images/validation/stripe-elements-js.png)
+- [product-page.js](static/docs/images/validation/jshint-back-to-top-js.png)
 
 ## Browser Validation
 
