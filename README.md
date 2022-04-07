@@ -123,7 +123,7 @@ The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/x
 
 
 The Database schema is below
-![]()
+![](static/docs/images/database.png)
 
 
 # **Existing Features**
