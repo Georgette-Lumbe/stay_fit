@@ -14,9 +14,10 @@
 2. [Manual Testing](#manual-testing "#Goto manual testing")
 
 3. [Automated Testing](#automated-testing "#Goto automated testing")
-    * [Code Validation](#code-validation "Goto code validation")
-    * [Browser Validation](#browser-validation "Goto browser validation")
-    * [Lighthouse Auditing](#lighthouse-auditing "Goto lighthouse auditing")
+
+4. [Code Validation](#code-validation "Goto code validation")
+5. [Browser Validation](#browser-validation "Goto browser validation")
+6. [Lighthouse Auditing](#lighthouse-auditing "Goto lighthouse auditing")
 
 ---
 
@@ -53,13 +54,15 @@
 | 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
 | 24  |   |  see how products are performing | see which products are performing best. || Pass |
 
+---
+
 [Go to top](#testing-user-stories "#Goto testing user stories")
 
 # Manual Testing
 
-### **Manual Testing**
+## **Manual Testing**
 
-#### **Devices Used**
+### **Devices Used**
 The site was tested on these devices:
 - iPhone 12 mini
 - iPhone XR
@@ -68,7 +71,7 @@ The site was tested on these devices:
 - iPhone SE 2020
 
 
-#### **Navigation**
+### **Navigation**
     - all users
 
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
@@ -81,7 +84,7 @@ The site was tested on these devices:
 |   | Searching using Search Bar displays the product in the products page | Type dumbbells in search bar | Redirected to Products page with all dumbbells shown | Pass |
 
 
-#### **Navigation**
+### **Navigation**
     - users logged in
 |  Navbar links   | Clicking Profile takes user to their profile page | Click Profile | Redirected to Profile Page | Pass |
 |  | Click Log Out logs out the user | Click Log Out | User logged out and redirected to Log In | Pass |
@@ -96,13 +99,13 @@ The site was tested on these devices:
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
 
-#### **Home Page**
+### **Home Page**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- |:----:|
 | Shop Now | Clicking the shop now button takes users to view all products | Click shop button | User redirected to the products page | Pass |
 | Shopping Options | Clicking All products, Equipments, Trainers, and Sportswear Links lead to different parts of shop | Click All products, Equipments, Trainers, and Sportswear | Redirected to the relevant products in shop | Pass |
 
-#### **Register Page**
+### **Register Page**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- | :-----:|
 | Register functionality | Form validation for email requires `@` symbol |  Attempt to register without `@` in input field | Form validation requests valid email address | Pass |
@@ -112,7 +115,7 @@ The site was tested on these devices:
 | | Password must be longer than 8 characters | Attempt to enter password with less than 8 characters | Form restricts the user from using less than 8 characters | Pass |
 | | Register with new user and password to be logged in and redirected to Profile page | Enter email address, name, username, password and click register | New account registered and profile page shown | Pass |
 
-#### **Log In Page**
+### **Log In Page**
 
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-----------------| ----------|  ---------- | :----: |
@@ -120,7 +123,7 @@ The site was tested on these devices:
 |   | Incorrect username/password combination shows error message | Attempt to log in with incorrect credentials | "The username and/or password you specified are not correct." error message appears| Pass |
 | Link to Register | Redirect to Register page | Click link to register | Redirected to Register page | Pass |
 
-#### **Profile Page**
+### **Profile Page**
 
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- | :----:|
@@ -131,7 +134,7 @@ The site was tested on these devices:
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
 
-#### **Products Pages**
+### **Products Pages**
 
 ##### **Products**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
@@ -164,18 +167,20 @@ The site was tested on these devices:
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
 
-#### **Bag**
+### **Bag**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- | :----:|
 | View Items | Correct products are in the bag | Add product to bag and check quantity and total are in the bag | Expected products are in the bag | Pass |
 | Update Items | Update the number of a product in the bag and it will reflect in bag and price | Click pen Icon, Change number of product in bag and check quantity and total has updated | Total and quantity updated | Pass |
 | Remove Items | Click remove for item to be removed from the bag | Click remove icon beside relevant product | Item removed from bag and notification to confirm this "Removed <item> from your bag" | Pass |
 
-#### **Checkout**
+### **Checkout**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- | :----:|
 | View Items | Correct products are in the checkout | Add products to bag, click Secure Checkout | Expected products are in the checkout product list | Pass |
 | Form Validation | Required fields must be completed to complete  | Attempt to check out without filling in a required field | Error message "Please fill in this field" | Pass |
+
+--- 
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
 
@@ -188,7 +193,7 @@ Automated testing of views was completed to:
 - Test the correct template loads on page load
 - Test the home page is accessible by name
 
-### **Products**
+## **Products**
 
 Automated testing of views was completed to:
 - Test the url works when loading the page
@@ -208,7 +213,7 @@ Automated testing of models was completed to:
 - Testing category models friendly name string method returns friendly name
 - Test product model string method
 
-### **Profiles**
+## **Profiles**
 
 Automated testing of views was completed to:
 
@@ -230,7 +235,7 @@ Automated testing of forms was completed to:
 
 [Go to top](#testing-user-stories "#Goto testing user stories")
 
-### **Bag**
+## **Bag**
 
 Automated testing of views was completed to:
 
@@ -253,7 +258,7 @@ Automated testing of templatetags was completed to:
 
 - Test that the calc_subtotal function calculates the subtotal correctly
 
-### **Checkout**
+## **Checkout**
 
 Automated testing of views was completed to:
 
@@ -284,30 +289,34 @@ Automated testing of forms was completed to:
 
 [Go to top](#testing-user-stories "#Goto testing user stories")
 
-## Code Validation
+# Code Validation
 
-#### **HTML Validator**
+## **HTML Validator**
+
 HTML validator was used for all pages and only five minor erros  about the use of li, nav, div elements. 
 - [Templates-html1](static/docs/images/validation/templates-html1.png)
 - [Templates-html2](static/docs/images/validation/templates-html2.png)
 
-#### **CSS Jigsaw**
+## **CSS Jigsaw**
+
 CSS Jigsaw validation passed for all pages
 - [checkout.css](static/docs/images/validation/checkout-css.png)
 - [base.css](static/docs/images/validation/base-css.png)
 
-#### **PEP8**
+## **PEP8**
+
 -  Checkout [signals](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1642780620039300) imported but not used in problems tab however this is required as it is being accessed elsewhere so the problem can be ignored. 
 - Settings.py, env import but unused
 
 [With all Python files open](static/docs/images/validation/pep8.png) those are the only two issues.
 
-#### **JSHint**
+## **JSHint**
+
 JavaScript JSHint validator passed for all pages
 - [stripe_elements.js](static/docs/images/validation/stripe-elements-js.png)
 - [product-page.js](static/docs/images/validation/jshint-back-to-top-js.png)
 
-## Browser Validation
+# Browser Validation
 
 The site was tested on:
 - Google Chrome
@@ -321,7 +330,7 @@ The site was tested on:
 
 ![](static/docs/images/edge.png) 
 
-## Lighthouse Auditing
+# Lighthouse Auditing
 
 Lighthouse testing was completed on all pages of the site
 - [Home](static/docs/images/validation/lighthouse-home.png)
@@ -334,5 +343,7 @@ Lighthouse testing was completed on all pages of the site
 - [Add Product](static/docs/images/validation/lighthouse-add-product.png)
 
 The Lighthouse scores are quite good in my opinion and a lot of the warnings that appeared were due to things outside my control like external CSS, JS and JQuery libraries.
+
+--- 
 
 [Go to top](#testing-user-stories "#Goto testing user stories")
