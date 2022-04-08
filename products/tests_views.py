@@ -2,6 +2,8 @@ from django.test import TestCase
 from django.shortcuts import reverse
 from django.contrib.messages import get_messages
 
+from .models import Category, Product
+
 
 class TestProductViews(TestCase):
 
@@ -33,11 +35,22 @@ class TestProductViews(TestCase):
         response = self.client.get(reverse('products'))
         self.assertEqual(response.status_code, 200)
 
+    def test_categories(self):
+        """
+        test categories sort functionality
+        """
+        product = Product.objects.get(id=1)
+        category = Category.objects.get(pk=5)
+        response = self.client.get(reverse('products'))
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(product.category, category)  # Test failed
+        self.assertContains(response, product.category)
+
     def test_sort_functionality(self):
         """
         Test that the sort functionality works
         """
-        category_name = 'dumbbells'
+        category_name = 'dumbells'
         sort_array = ['name', 'category']
         for sort in sort_array:
             direction = 'desc'
