@@ -22,8 +22,6 @@
 
 # Testing User Stories
 
-### User Stories Testing
-
 | User Story ID  | As a/an  | I want to be able to...  | So that I can... |  | Pass/Fail |
 |-------------------|-------------------|-----------------|-------------------|-------------------|---------------|
 | Viewing Products & Navigation |
