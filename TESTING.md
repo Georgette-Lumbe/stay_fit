@@ -181,6 +181,109 @@ The site was tested on these devices:
 
 # Automated Testing
 
+## **Home**
+
+Automated testing of views was completed to:
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- Test the home page is accessible by name
+
+### **Products**
+
+Automated testing of views was completed to:
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- Test the products page is accessible by name
+- Test categories sort functionality                # Test Failed
+- Test that the sort functionality works
+- Test that the search functionality works as expected
+- Test that the search error message display correctly
+- Test product detail page loads via url
+- Test product detail page loads via name
+- Test product detail page loads via template
+
+Automated testing of models was completed to:
+
+- Test category model string method
+- Testing category models friendly name string method returns friendly name
+- Test product model string method
+
+### **Profiles**
+
+Automated testing of views was completed to:
+
+- Test the profile page loads correctly
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- Test the profile page is accessible by name
+- Test the profile form works if form is valid
+- Test orders displayed on login to profile page
+
+Automated testing of models was completed to:
+
+- Test retrieving the user profile
+- Test the user profile string method returns the username
+
+Automated testing of forms was completed to:
+
+- Test that none of the form fields are required
+
+[Go to top](#testing-user-stories "#Goto testing user stories")
+
+### **Bag**
+
+Automated testing of views was completed to:
+
+- Test the bag views work correctly
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- Test the products page is accessible by name
+- Test that the view_bag view works correctly
+- Test that the add to bag view works as expected
+- Test that the add_to_bag function adds the item to the bag
+- Test that the add_to_bag view adds the product to the bag
+- Test that the add_to_bag view increases the quantity of an item if the item is already present in the shopping bag
+- Test that the adjust bag view works as expected to calculate total
+- Test that the add_to_bag view updates the quantity of an item if the item is already in the bag
+- Test remove from bag view removes the product from the bag
+- Test that the remove_from_bag view removes an item from the bag
+- Test that the remove from bag view returns an error if something goes wrong
+
+Automated testing of templatetags was completed to:
+
+- Test that the calc_subtotal function calculates the subtotal correctly
+
+### **Checkout**
+
+Automated testing of views was completed to:
+
+- Test the checkout page loads correctly
+- Test that the cache_checkout_data view works as expected
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- test the products page is accessible by name
+- Test get checkout view when items in the bag
+- Test error msg appears when bag empty
+- Test error msg appears when no stripe key
+- Check if user is authenticated then autofill the form with details
+
+Automated testing of models was completed to:
+
+- Test the order model
+- Test order line model string method
+
+Automated testing of forms was completed to:
+
+- Test to see if full name field is required
+- Test to see if email field is required
+- Test to see if phone number field is required
+- Test to see if country field is required
+- Test to see if town_or_city field is required
+- Test to see if street_address1 field is required
+- check the field only displays certain fields
+
+[Go to top](#testing-user-stories "#Goto testing user stories")
+
 ## Code Validation
 
 #### **HTML Validator**
@@ -232,4 +335,4 @@ Lighthouse testing was completed on all pages of the site
 
 The Lighthouse scores are quite good in my opinion and a lot of the warnings that appeared were due to things outside my control like external CSS, JS and JQuery libraries.
 
- [Go to top](#testing-user-stories "#Goto testing user stories")
+[Go to top](#testing-user-stories "#Goto testing user stories")
