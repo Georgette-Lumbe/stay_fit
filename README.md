@@ -1,6 +1,6 @@
 # Stay Fit
 
-<img src="" width="100%" alt="responsive_image">
+![](static/docs/images/responsive-image.png)
 
 The live website can be viewed [here](https://stayfit2022.herokuapp.com/)
 

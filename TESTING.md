@@ -18,12 +18,44 @@
     * [Browser Validation](#browser-validation "Goto browser validation")
     * [Lighthouse Auditing](#lighthouse-auditing "Goto lighthouse auditing")
 
-4. [User Testing](#user-testing "Goto user testing")
-
 ---
 
 # Testing User Stories
 
+### User Stories Testing
+
+| User Story ID  | As a/an  | I want to be able to...  | So that I can... |  | Pass/Fail |
+|-------------------|-------------------|-----------------|-------------------|-------------------|---------------|
+| Viewing Products & Navigation |
+| 1  | User/Shopper | select and view individual products | view a larger image of product, description, price, and a purchase option. || Pass |
+| 2  |   | be able to add, edit quantity and remove items from my bag | buy them if after browsing. || Pass |
+| 3  |   | view a specific category of products | quickly find products I'm interested in without having to search through all products. || Pass |
+| 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. || Pass |
+| Registration and Accounts |
+| 5  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. || Pass |
+| 6  |   | recover my account if password forgot  | gain access to my account. || Pass |
+| 7  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information || Pass |
+| 8  |   | login and logout functionality | I can gain access to my account. || Pass |
+| Searching products |
+| 9  | User/Shopper | search for specific products | find products I am interested in buying. || Pass |
+| 10  |   | see the number of results in a search that I have performed | easily see how many products are available. || Pass |
+| 11  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. || Pass |
+| Checkout  |
+| 15  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
+| 16  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
+| 17  |   | easily select the correct size | ensure I have ordered the right size for my project. |
+| 18  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
+| 19  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
+| 20  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
+| 21 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
+| Admin/Management  |
+| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
+| 23  |   | navigate through Product management | add a product directly from the website || Pass |
+| 23  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
+| 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
+| 24  |   |  see how products are performing | see which products are performing best. || Pass |
+
+[Go to top](#testing-user-stories "#Goto testing user stories")
 
 # Manual Testing
 
@@ -149,42 +181,6 @@ The site was tested on these devices:
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
 
-### User Stories Testing
-
-| User Story ID  | As a/an  | I want to be able to...  | So that I can... |  | Pass/Fail |
-|-------------------|-------------------|-----------------|-------------------|-------------------|---------------|
-| Viewing Products & Navigation |
-| 1  | User/Shopper | select and view individual products | view a larger image of product, description, price, and a purchase option. || Pass |
-| 2  |   | be able to add, edit quantity and remove items from my bag | buy them if after browsing. || Pass |
-| 3  |   | view a specific category of products | quickly find products I'm interested in without having to search through all products. || Pass |
-| 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. || Pass |
-| Registration and Accounts |
-| 5  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. || Pass |
-| 6  |   | recover my account if password forgot  | gain access to my account. || Pass |
-| 7  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information || Pass |
-| 8  |   | login and logout functionality | I can gain access to my account. || Pass |
-| Searching products |
-| 9  | User/Shopper | search for specific products | find products I am interested in buying. || Pass |
-| 10  |   | see the number of results in a search that I have performed | easily see how many products are available. || Pass |
-| 11  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. || Pass |
-| Checkout  |
-| 15  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
-| 16  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
-| 17  |   | easily select the correct size | ensure I have ordered the right size for my project. |
-| 18  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
-| 19  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
-| 20  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
-| 21 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
-| Admin/Management  |
-| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
-| 23  |   | navigate through Product management | add a product directly from the website || Pass |
-| 23  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
-| 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
-| 24  |   |  see how products are performing | see which products are performing best. || Pass |
-
-
-[Go to top](#testing-user-stories "#Goto testing user stories")
-
 # Automated Testing
 
 ## Code Validation
@@ -226,6 +222,16 @@ The site was tested on:
 
 ## Lighthouse Auditing
 
-# User testing
+Lighthouse testing was completed on all pages of the site
+- [Home](static/docs/images/validation/lighthouse-home.png)
+- [Products](static/docs/images/validation/lighthouse-products.png)
+- [Product Detail](static/docs/images/validation/lighthouse-product_detail.png)
+- [Bag](static/docs/images/validation/lighthouse-bag.png)
+- [Checkout](static/docs/images/validation/lighthouse-checkout.png)
+- [Checkout Success](static/docs/images/validation/lighthouse-checkout-success.png)
+- [Profile](static/docs/images/validation/lighthouse-profile.png)
+- [Add Product](static/docs/images/validation/lighthouse-add-product.png)
+
+The Lighthouse scores are quite good in my opinion and a lot of the warnings that appeared were due to things outside my control like external CSS, JS and JQuery libraries.
 
  [Go to top](#testing-user-stories "#Goto testing user stories")
