@@ -5,35 +5,41 @@
 The live website can be viewed [here](https://stayfit2022.herokuapp.com/)
 
 # Table of contents
+
 1. [Introduction](#introduction)
 2. [UX](#UX)
     * [User Stories](#User-Stories)
-    * [Development Planes](#development-planes)
-        * [Strategy](#Strategy)
-         * [Skeleton](#Skeleton)
-            * [Wireframes](#Wireframes)
-            * [Database Schema](#Database-Schema)
-        * [Structure](#Structure)
-            * [Existing Features](#Existing-Features) 
-            * [Features Left To Implement](Feature-Left-To-Implement)
+    * [Wireframes](#Wireframes)
+    * [Database Schema](#Database-Schema)
+    * [Existing Features](#Existing-Features)
+    * [Features Implemented](Feature-Implemented)
+    * [Features Left To Implement](Feature-Left-To-Implement)
+    * [Responsive Design](#Responsive-Design)
+        * [Defensive Design](#Defensive-Design)
     * [Design](#Design)
         * [Typography](#Imagery)
         * [Imagery](#Imagery)
-
-3. [Technolgies Used](#Technologies-Used)        
-4. [Testing](#Testing)
-5. [Web Marketing](#web-Marketing)
-6. [Issues and bugs fixed](#issues-and-bugs-fixed)
-7. [Deployment](#Deployment)
-    * [Deployment Steps](#Deployment-Steps) 
+3. [Testing](#Testing)       
+4. [Issues and bugs fixed](#issues-and-bugs-fixed)
+5. [Deployment](#Deployment)
+    * [Repository Creation](#Repository-creation) 
+    * [Deployment Steps](#Deployment-Steps)
+    * [Add Heroku Postgres Database](#Add-Heroku-Postgres-Database)
+    * [Connecting to heroku](#Connecting-to-heroku)
+    * [Connect Heroku app to Github repository](#Connect-Heroku-app-to-Github-repository)
+    * [Enable automatic deployment](#Enable-automatic-deployment)
+    * [Amazon AWS](#Amazon-AWS)
+    * [Gmail Client](#Gmail-client)
+    * [Config Var](#Config-var)
     * [Making a clone to run locally](#Making-a-clone-to-run-locally)
     * [How to Fork the respository](#How-to-Fork-the-Respository)
-8. [Languages Used](#languages-used)
-9. [Credits](#Credits)
+6. [Technolgies Frameworks and Librairies Used](#Technologies-frameworks-and-librairies-Used) 
+7. [Languages Used](#languages-used)
+8. [Credits](#Credits)
     * [Media](#Media)
     * [Content](#Content)
     * [Code](#Code)
-10. [Acknowledgements](#Acknowledgements)
+9. [Acknowledgements](#Acknowledgements)
 
 ---
 
@@ -81,11 +87,11 @@ This is the last of five milestone projects that the developer is required to co
 | 24  |   |  see how products are performing | see which products are performing best. |
 
 
-# Wireframes
+## Wireframes
 The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/xd.html) and can be found in pdf form in [wireframes](static/docs/images/wireframes).
 
 
-#### **Desktop view**
+### **Desktop view**
 - Home
 
     ![](static/docs/images/wireframes/desktop-home.png)
@@ -136,7 +142,7 @@ The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/x
 
 [Go to top](#introduction)
 
-#### **Mobile view**
+### **Mobile view**
 
 - Home
 
@@ -192,7 +198,7 @@ The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/x
 
 [Go to top](#introduction)
 
-# **Database Schema**
+## Database Schema
 
 - [SQLite](https://www.sqlite.org/index.html)
     - Cloud based database to hold the product, user, order and blog fields.
@@ -203,7 +209,7 @@ The Database schema is below
 ![](static/docs/images/database.png)
 
 
-# **Existing Features**
+## Existing Features
 
 - **Site Navigation**
 
@@ -219,7 +225,7 @@ The navigation bar displays different links depending on whether the user is log
 | Search  | &#10003;  | &#10003;  | &#10003;  |
 | Add Product | &#10007; |&#10007;  |  &#10003; |
 
-# **Features Implemented**
+## Features Implemented
 
 - **Create Profile**
     - Users are able to:
@@ -286,7 +292,7 @@ Header
 
 [Go to top](#introduction)
 
-# **Features Left To Implement**
+## Features Left To Implement
 
 - I would like to implement a feature where if users log out of the site with items in their bags the items would be there upon log in again. Currently this is not the case.
 - A chat bot where users can ask questions on the site.
@@ -295,12 +301,13 @@ Header
 - The ability to view, add comments, edit and delete their own blog posts.
 - A star rating or upvote functionality for the products and blog posts.
 - The ability to Review a comment.
+- A Facebook and Instagram Pages
 
-# **Responsive Design**
+## Responsive Design
 
 The site was designed to be mobile first as more users are using their handheld devices to shop online but this has been adapted to allow a great experience for desktop users also. 
 
-# **Defensive Design**
+### Defensive Design**
 
 - **Form Validation**
   - Form validation has been added to every form to ensure all required information is included before submitting.
@@ -321,7 +328,7 @@ The site was designed to be mobile first as more users are using their handheld 
 
 [Go to top](#introduction)
 
-# **Design**
+## Design
 
 1. Typography
 
@@ -331,17 +338,15 @@ The site was designed to be mobile first as more users are using their handheld 
     * The main image used in the home page was originally obtained from [Unsplash](https://unsplash.com/)
     * All images used in this site was originally obtained from [Aliexpress](https://best.aliexpress.com/?af=2058828&cn=6814&cv=14000&dp=102cc0e598892ed4a074a0e1a788d9&aff_fcid=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&tt=CPS_NORMAL&aff_fsk=_ALwFAx&aff_platform=portals-tool&sk=_ALwFAx&aff_trace_key=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&terminal_id=f18636dfae2f448d8bb88a9965502843&afSmartRedirect=y)
 
+---
+
 [Go to top](#introduction)
 
-# **Testing**
+# Testing
 
 Testing information can be found in a separate [testing file](https://github.com/Georgette-Lumbe/stay_fit/blob/main/TESTING.md).
 
-# **Web Marketing**
-
-* Facebook Page
-
-# **Issues and bugs fixed**
+# Issues and bugs fixed
 
 The developper met some issues during the development of the website, below are the issues, bugs and solutions that the developer has encountered:
 
@@ -401,10 +406,11 @@ Request req_aPjY4IbnYrI832: Invalid currency: euro. Stripe currently supports th
 8. **Bugs non fixed**
     	- Sub-titles in the Shopping bag are not on the same column with details.
 
+---
 
 [Go to top](#introduction)
 
-# **Deployment**
+# Deployment
 
 This project was developed using [Gitpod IDE](https://gitpod.io) and pushed to Github using the in-built terminal. However, because Github can only host static websites it was necessary to deploy this project to Heroku because it is a compatible hosting platform for a back-end focused site like Trainees Portal.
 
@@ -454,6 +460,7 @@ Once the above steps are done, the website can be deployed in Heroku using the s
 6. Click to create
 
 ## Add Heroku Postgres Database
+
 1. Click the resources tab in heroku.
 2. Under Add-ons search for heroku postgres.
 3. Click on heroku postgres when it appears. 
@@ -490,14 +497,14 @@ If the git remote isn't initialised you may have to do that first by running *he
 5. Select Main branch
 6. Click on deploy branch 
 
-## Enable automatic deployment:
+## Enable automatic deployment
 
 1. Click the Deploy tab
 2. In the Automatic deploys section, the main branch is enabled to deploy then click Enable Automation Deploys.
 
 [Go to top](#introduction)
 
-#### Amazon AWS
+## Amazon AWS
 
 1. Create Amazon AWS account and create a new bucket in the S3 services and choose your closest region.
 2. Uncheck block all public access and create bucket. 
@@ -527,7 +534,7 @@ If the git remote isn't initialised you may have to do that first by running *he
 9. Add AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME = 'eu-west-2' to settings.py.
 10. Add, commit and push to GitHub then navigate to Heroku to confirm static files collected successfully on the Build Log. The DISABLE_COLLECTSTATIC variable can now be deleted. 
 
-#### **GMail Client**
+## GMail Client
 
 In `settings.py` change the `DEFAULT_FROM_EMAIL` to your own email address.
 
@@ -540,9 +547,10 @@ In `settings.py` change the `DEFAULT_FROM_EMAIL` to your own email address.
 7. Enter your password again if prompted, then set 'App' to `Mail`, 'Device' to `Other`, and type in `Django`.
 8. Copy and paste the passcode that shows up, this is your '**EMAIL_HOST_PASS**' variable to add to your environment/config variables. '**EMAIL_HOST_USER**' is the Gmail email address.
 
+
 [Go to top](#introduction)
 
-### **Config Vars**
+## Config Vars
 
 The config/environment variables should be set up as follows:
 
@@ -562,7 +570,7 @@ The config/environment variables should be set up as follows:
 | EMAIL_HOST_USER        | YOUR_EMAIL_HOST_USERNAME   |
 
 
-#### Where to find Config Var Key-value Pairs 
+### Where to find Config Var Key-value Pairs 
 
 To find the values of each key:
 
@@ -604,8 +612,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 [Go to top](#introduction)
 
 
-
-# **Technologies, frameworks and Libraries Used**
+# Technologies frameworks and Libraries Used
 
 1. [Python](https://www.python.org/) 
     The following Python modules were used on this project:
@@ -668,7 +675,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
 18. [Favicon.io](https://favicon.io/) 
     - This was used to create the site's favicon.
-19. [Am I Responsive](http://ami.responsivedesign.is/)
+19. - [techsini](https://techsini.com/multi-mockup/index.php)
     - This was used to test the responsiveness of the site and also to create the mock-up image presented at the start of this document.
 20. - [Dbdiagram.io](https://dbdiagram.io/home)
     - Dbdiagram.io was used to create the Database Schema presented in this document.
@@ -695,7 +702,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
 [Go to top](#introduction)
 
-# **Languages used**
+# Languages used
 
 This project is primarily built using:
 
@@ -708,7 +715,7 @@ This project is primarily built using:
 4. [Python 3](https://www.python.org/)
     - Used to run the site and database
 
-# **Credits**
+# Credits
 
 ## Media
 
@@ -718,6 +725,8 @@ This project is primarily built using:
 ## Content
 
 * All the products content was obtained from [Aliexpress](https://best.aliexpress.com/?af=2058828&cn=6814&cv=14000&dp=102cc0e598892ed4a074a0e1a788d9&aff_fcid=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&tt=CPS_NORMAL&aff_fsk=_ALwFAx&aff_platform=portals-tool&sk=_ALwFAx&aff_trace_key=b1233b7233a7481bbf082a79c1a2a898-1649256468231-01328-_ALwFAx&terminal_id=f18636dfae2f448d8bb88a9965502843&afSmartRedirect=y)
+
+* [Automated Tests - Day 6 - Django Bootcamp](https://www.youtube.com/watch?v=5E_xLmQXOZg) and [Testing Django with Travis CI](https://www.youtube.com/watch?v=uFRJsbV8W_4) help me to test my folders.
 
 ## Code
 
@@ -731,7 +740,7 @@ This project is primarily built using:
 
 * Stack overflow for may bugs as mentionne in the [issues and bugs fixed](#issues-and-bugs-fixed)
 
-# **Acknowledgements**
+# Acknowledgements
 
 * I would like to thank the entire slack community for being a source of support, knowledge and positive feedback throughout this project.
 
@@ -740,6 +749,7 @@ This project is primarily built using:
 * I would like to thank my own class cohorts for being supportive and helpful throughout the duration of the course. This particular channel provided a great deal of respite and also necessary feedback throughout the course which has proven invaluable for maintaining motivation. 
 
 * Finally I would like to thank my husband Jimmy for constantly helping to test the project throughout its development, providing insightful suggestions. I would also like to thank Jimmy for his constant love, his ear to listen my ideas and his support throughout this course and for never allowing me to give up, this would not have been possible without him and I will always been grateful for everything he has done to make this possible.
+
 ---
 [Go to top](#introduction)
 
