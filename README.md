@@ -697,6 +697,8 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     - Used to implement the payment method
 29. [Temp Mail](https://temp-mail.org/fr/view/624f22d6022f80072a9eb41a)
     - Used to generate an email
+30. [Xml-sitemaps](https://www.xml-sitemaps.com/)
+    - Used to generate a Sitemap
 
 ---
 
