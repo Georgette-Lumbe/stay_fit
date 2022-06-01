@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col">
+      <hr>
+      <h2 class="logo-font mb-4">Delivery information</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="d-none d-md-block col-md-3">
+      <img class="w-100" src="{{ MEDIA_URL }}104.jpg" alt="woman doing fitness with ball">
+    </div>
+    <div class="col-12 col-md-9">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-dark font-weight-bold">Delivery Cost:</li>
+        
+         
+        <li class="list-group-item">
+          As our products are very valuable, we use Fedex for all deliveries with
+          tracking. To cover the cost of secure delivery we charge €8 for each order.
+        </li>
+      </ul>
+      <ul class="list-group mt-3">
+        <li class="list-group-item list-group-item-dark font-weight-bold">Delivery time:</li>
+        <li class="list-group-item">
+          We aim to dispatch the order within three business days upon order and
+          payment comfirmation.
+        </li>
+        <li class="list-group-item">
+          We will notify you when your order is dispatched with the tracking
+          informaion.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
