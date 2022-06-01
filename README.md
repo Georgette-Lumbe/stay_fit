@@ -328,21 +328,21 @@ Research on competitors in the market was carried out prior to designing process
 SEO, Facebook and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
 Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
 
-1. Facebook Page
+1. **Facebook Page**
 
     ![](static/docs/images/screenshots/facebook.png)
 
     ![](static/docs/images/screenshots/facebook_post.png)
 
-2. Newsletter Sign up located in Footer
+2. **NewsLetter Sign Up located in Footer**
 
-    ![]()
+    ![](static/docs/images/screenshots/newsletter.png)
 
-3. Privacy Policy Page
+3. **Privacy Policy Page**
 
     ![](static/docs/images/screenshots/privacy_policy.png)
 
-4. Terms and Conditions Page
+4. **Terms and Conditions Page**
 
     ![](static/docs/images/screenshots/terms_and_conditions.png)
 
@@ -450,10 +450,13 @@ Request req_aPjY4IbnYrI832: Invalid currency: euro. Stripe currently supports th
     * To avoid many errors as "class has no member object", the developper via [this post](https://stackoverflow.com/questions/58255016/class-has-no-objects-member) was able to fix those errors. He changed the settings.JSON contents with this: `"python.linting.pylintArgs": [
     "--load-plugins=pylint_django",
     "--errors-only"],`
-    * The above fix had to another error : "django was not configured. For more information run pylint ---load-plugins=pylint_django --help-msg=django-not-configured". And the developper visited [this post](https://stackoverflow.com/questions/65761250/pylint-django-raising-error-about-django-not-being-configured-when-thats-not-th)and this [video](https://www.youtube.com/watch?v=SXNLt6FRizc) to fix the problem.
+    * The above fix had to another error : "django was not configured. For more information run pylint ---load-plugins=pylint_django --help-msg=django-not-configured". And the developper visited [this post](https://stackoverflow.com/questions/65761250/pylint-django-raising-error-about-django-not-being-configured-when-thats-not-th) and this [video](https://www.youtube.com/watch?v=SXNLt6FRizc) to fix the problem.
 
 8. **Bugs non fixed**
+
     	- Sub-titles in the Shopping bag are not on the same column with details.
+
+        - Footer in product_detail have not a right width
 
 ---
 
