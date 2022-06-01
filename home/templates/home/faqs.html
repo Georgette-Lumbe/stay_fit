@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr>
+      <h2 class="logo-font mb-4">Frequently Asked Questions</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-dark font-weight-bold">What is the delivery cost and how long does it
+        take to receive the items</li>
+      <li class="list-group-item ms-5">Please see the page <a href="{% url 'delivery' %}">Delivery info</a></li>
+      <li class="list-group-item list-group-item-dark font-weight-bold">Do I receive a notification when item is
+        despatched?</li>
+      <li class="list-group-item ms-5">Yes, we will send an email to inform you when the product is despatched</li>
+      <li class="list-group-item list-group-item-dark font-weight-bold">Do I receive a tracking number when item is
+        despatched?</li>
+      <li class="list-group-item ms-5">Yes, the email to inform you on the product despatch should include a trancking
+        number.</li>
+      <li class="list-group-item list-group-item-dark font-weight-bold">What is the return policy? </li>
+      <li class="list-group-item ms-5">We do our best to ensure the products sent to you are in a perfect condition
+        but in the unlikely case you are not entirely happy with the products, please contact the shop we will arrange
+        our courier to pick the product up from you.
+        We will arrange the refund process once the product is confirmed to the original state.
+        You can only return the item(s) if they are unused and not damaged within 14days
+      </li>
+      <li class="list-group-item list-group-item-dark font-weight-bold">Is the payment process secure? </li>
+      <li class="list-group-item ms-5">Yes, we use Stripe payment system for secure and easy payment</li>
+      <li class="list-group-item list-group-item-dark font-weight-bold">Where are these sportswear made?? </li>
+      <li class="list-group-item ms-5"> All our sportswear and trainers are made in Istanbul, Turkey.</li>
+    </ul>
+
+    <h5 class="mt-3 mb-5">If you have any other queries, please feel free to contact us from <a
+        href="#">this page</a> </h5>
+  </div>
+</div>
+
+{% endblock %}
