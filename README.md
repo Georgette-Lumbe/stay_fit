@@ -12,8 +12,11 @@ The live website can be viewed [here](https://stayfit2022.herokuapp.com/)
     * [Wireframes](#Wireframes)
     * [Database Schema](#Database-Schema)
     * [Existing Features](#Existing-Features)
-    * [Features Implemented](Feature-Implemented)
-    * [Features Left To Implement](Feature-Left-To-Implement)
+    * [Features Implemented](#Feature-Implemented)
+    * [Features Left To Implement](#Feature-Left-To-Implement)
+    * [Strategy](#Strategy)
+        * [Business Model](#Business-model)
+        * [SEO](#SEO)
     * [Responsive Design](#Responsive-Design)
         * [Defensive Design](#Defensive-Design)
     * [Design](#Design)
@@ -62,33 +65,37 @@ This is the last of five milestone projects that the developer is required to co
 | 2  |   | be able to add, edit quantity and remove items from my bag | buy them if after browsing. |
 | 3  |   | view a specific category of products | quickly find products I'm interested in without having to search through all products. |
 | 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. |
+| 5  |   | view and add reviews | make a decision based on the comments, I can let other people know what I think of the product. |
+| 6  |   | view the contact page | contact the admin of the site whenever I have an enquiry. |
 | Registration and Accounts |
-| 5  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. |
-| 6  |   | recover my account if password forgot  | gain access to my account. |
-| 7  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information |
-| 8  |   | login and logout functionality | I can gain access to my account. |
+| 7  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. |
+| 8  |   | recover my account if password forgot  | gain access to my account. |
+| 9  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information |
+| 10  |   | login and logout functionality | I can gain access to my account. |
 | Searching products |
-| 9  | User/Shopper | search for specific products | find products I am interested in buying. |
-| 10  |   | see the number of results in a search that I have performed | easily see how many products are available. |
-| 11  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. |
+| 11  | User/Shopper | search for specific products | find products I am interested in buying. |
+| 12  |   | see the number of results in a search that I have performed | easily see how many products are available. |
+| 13  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. |
 | Checkout  |
-| 15  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. |
-| 16  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. |
-| 17  |   | easily select the correct size | ensure I have ordered the right size for my project. |
-| 18  |   | adjust the number of products to buy | update the order without going back to the product page. |
-| 19  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. |
-| 20  |   | remove items from my basket | I can ensure I am paying for only products that I want. |
-| 21 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. |
+| 14  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. |
+| 15  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. |
+| 16  |   | easily select the correct size | ensure I have ordered the right size for my project. |
+| 17  |   | adjust the number of products to buy | update the order without going back to the product page. |
+| 18  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. |
+| 19  |   | remove items from my basket | I can ensure I am paying for only products that I want. |
+| 20 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. |
 | Admin/Management  |
-| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  |
-| 23  |   | navigate through Product management | add a product directly from the website |
+| 21  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  |
+| 22  |   | navigate through Product management | add a product directly from the website |
 | 23  |   | update a product | have the ability to change product details, price, availability, and images. |
 | 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. |
-| 24  |   |  see how products are performing | see which products are performing best. |
+| 25  |   |  see how products are performing | see which products are performing best. |
+| 26   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. |
+| 27   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. |
 
 
 ## Wireframes
-The wireframes were created using [Adobe XD](https://www.adobe.com/uk/products/xd.html) and can be found in pdf form in [wireframes](static/docs/images/wireframes).
+The wireframes were created using [Balsamiq Desktop](https://balsamiq.com/wireframes/?gclid=Cj0KCQjwnNyUBhCZARIsAI9AYlEgVSdvUV2ZVOG_ZwyppPKlFQoH_Jikpou9jN7dBFtp6v-urgvaqn8aArerEALw_wcB) and can be found in pdf form in [wireframes](static/docs/images/wireframes).
 
 
 ### **Desktop view**
@@ -254,6 +261,7 @@ The navigation bar displays different links depending on whether the user is log
         - Name, Size (if has size), Shoesize (if has shoesize), colour, price, SKU, category
         - Add products to bag to buy
         - Find out the needle size of their required product and convert to local using the sizing guide
+        - See reviews of products and also review the products if logged in
 
     - Super users are able to:
         - Add, edit and delete products
@@ -300,8 +308,37 @@ Header
 - The ability for users to change their username.
 - The ability to view, add comments, edit and delete their own blog posts.
 - A star rating or upvote functionality for the products and blog posts.
-- The ability to Review a comment.
-- A Facebook and Instagram Pages
+
+## Strategy
+
+### Business Model
+
+This site followed principle of B2C E-Commerce business model.
+Research on competitors in the market was carried out prior to designing process. 
+SEO, Facebook and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
+Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
+
+1. Facebook Page
+
+    ![]()
+
+2. Newsletter Sign up located in Footer
+
+    ![]()
+
+3. Privacy Policy Page
+
+    ![]()
+
+4. Terms and Conditions Page
+
+    ![]()
+
+### SEO
+
+  * Keywords - Keywords in the HTML head tag were carefully selected to increase the visibility of the site on organic search.
+  * Description - Description was placed in the html head element to provide the clear information about the site
+* A Sitemap and Robots files was created
 
 ## Responsive Design
 
@@ -699,6 +736,10 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     - Used to generate an email
 30. [Xml-sitemaps](https://www.xml-sitemaps.com/)
     - Used to generate a Sitemap
+31. [MailChimp](https://mailchimp.com/)
+    - Used to build Newsletter
+32. [Terms Feed](https://www.termsfeed.com/privacy-policy-generator/)
+    - Used to generate the Privacy Policy and Terms and conditions
 
 ---
 
@@ -738,7 +779,7 @@ This project is primarily built using:
 
 * [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/) : Bootstrap library was used throughout the project mainly to make site responsive.
 
-* Code inspiration taken from [CI Student Suzy Bee](https://github.com/suzybee1987/knit-happens).
+* Code inspiration taken from [CI Student Suzy Bee](https://github.com/suzybee1987/knit-happens) and [CI Student Miwa Mullane](https://github.com/mwmlln)
 
 * Stack overflow for may bugs as mentionne in the [issues and bugs fixed](#issues-and-bugs-fixed)
 

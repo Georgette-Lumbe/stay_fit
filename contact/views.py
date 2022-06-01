@@ -24,7 +24,7 @@ class ContactFormView(FormView):
 # Contact Success view
 
 class ContactSuccessView(TemplateView):
-    """Page to diaply on successful submittion of contact"""
+    """Page to display on successful submission of contact"""
     template_name = 'contact/contact_success.html'
 
     def get_context_data(self, **kwargs):
