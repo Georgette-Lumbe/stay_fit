@@ -22,6 +22,14 @@ body {
     color: #555;
 }
 
+.offset-1 {
+    padding-bottom: 20px;
+}
+
+.profile {
+    padding-bottom: 20px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -37,6 +45,22 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+/* Decrease review title texterea */
+
+#id_review_title {
+    max-height: 50px;
+}
+
+.no-gutters {
+    border-top: 3px solid hsl(0deg 81% 58%);
+    box-shadow: rgb(0 0 0 / 20%) 0px 20px 30px;
+}
+
+.form-control {
+    color: #000;
+    border: 1px solid #555;
 }
 
 .shop-now-button {
@@ -275,8 +299,33 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* Footer */
+
 footer {
-    background-color: #000;
+    background-color: #555;
+}
+
+.delivery {
+    background-color: white;
+    margin-top: 15%;
+}
+
+.faq {
+    background-color: white;
+    margin-top: 15%;
+}
+
+.query {
+    padding: 0.75rem 1.25rem;
+}
+
+.contact {
+    margin-top: 15%;
+}
+
+.contact_success {
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 

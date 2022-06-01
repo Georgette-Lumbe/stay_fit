@@ -132,13 +132,14 @@
          <div class="col-md-12">
             {% if reviews %}
             {% for review in product.reviews.all %}
-            <div class="col-md-8">
+            <div class="col-md-12">
                <div class="card-body">
                   <h5 class="card-title">{{ review.review_title }}</h5>
                </div>
                <div class="card-body">
                   <p class="card-content">{{ review.review }}</p>
                </div>
+               <hr class="w-50 mb-1">
                <div class="card-body">
                   <p class="card-content">{{ review.review_author }}, {{ review.added_on|timesince }} ago</p>
                </div>
@@ -161,7 +162,7 @@
          <hr>
          <div class="row text-center">
             <div class="col-12">
-               <form method="POST" action= "{% url 'add_review' product.id %}#reviews" class="form mb-2" enctype="multipart/form-data">
+               <form method="POST" action= "{% url 'add_review' product.id %}#reviews" class="form mb-2 no-gutters" enctype="multipart/form-data">
                    
                   {% csrf_token %}
                   {{ review_form | crispy }}
