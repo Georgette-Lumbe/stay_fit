@@ -221,6 +221,7 @@ Automated testing of views was completed to:
 ## **Products**
 
 Automated testing of views was completed to:
+
 - Test the url works when loading the page
 - Test the correct template loads on page load
 - Test the products page is accessible by name
@@ -237,6 +238,13 @@ Automated testing of models was completed to:
 - Test category model string method
 - Testing category models friendly name string method returns friendly name
 - Test product model string method
+
+Automated testing of forms was completed to:
+
+- Test to see if review title field is required
+- Test to see if review field is required
+- Check the field only displays certain fields
+- Test to see if review title field is required
 
 ## **Profiles**
 

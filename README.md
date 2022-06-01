@@ -788,6 +788,8 @@ This project is primarily built using:
 
 * [Automated Tests - Day 6 - Django Bootcamp](https://www.youtube.com/watch?v=5E_xLmQXOZg) and [Testing Django with Travis CI](https://www.youtube.com/watch?v=uFRJsbV8W_4) help me to test my folders.
 
+* [Tawk to live chat feature with Sharma Coder](https://www.youtube.com/watch?v=RoJH1HfHNpU&t=194s) help for implementing the live chat with Tawk to.
+
 ## Code
 
 * A large portion of this project's code was inspired and developed following the Code Institute's Boutique Ado walkthrough. This Code Institute tutorial was instrumental in the creation of this site.
