@@ -326,6 +326,8 @@ Web site is carefully designed to give site visitors to easily navigate and find
 
     ![](static/docs/images/screenshots/facebook.png)
 
+    ![](static/docs/images/screenshots/facebook_post.png)
+
 2. Newsletter Sign up located in Footer
 
     ![]()
