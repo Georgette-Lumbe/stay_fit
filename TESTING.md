@@ -40,19 +40,23 @@
 | 10  |   | see the number of results in a search that I have performed | easily see how many products are available. || Pass |
 | 11  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. || Pass |
 | Checkout  |
-| 15  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
-| 16  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
-| 17  |   | easily select the correct size | ensure I have ordered the right size for my project. |
-| 18  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
-| 19  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
-| 20  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
-| 21 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
+| 12  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
+| 13  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
+| 14  |   | easily select the correct size | ensure I have ordered the right size for my project. |
+| 15  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
+| 16  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
+| 17  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
+| 18 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
 | Admin/Management  |
-| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
-| 23  |   | navigate through Product management | add a product directly from the website || Pass |
-| 23  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
-| 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
-| 24  |   |  see how products are performing | see which products are performing best. || Pass |
+| 19  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
+| 20  |   | navigate through Product management | add a product directly from the website || Pass |
+| 21  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
+| 22  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
+| 23  |   |  see how products are performing | see which products are performing best. || Pass |
+| 24  |   | view and add reviews | make a decision based on the comments, I can let other people know what I think of the product. || Pass |
+| 25  |   | view the contact page | contact the admin of the site whenever I have an enquiry. || Pass |
+| 26   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. || Pass |
+| 27   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. || Pass |
 
 ---
 
@@ -151,6 +155,9 @@ The site was tested on these devices:
 | Add to bag | Clicking Add To Bag adds the product to the bag | Open Product Detail page click add to bag | Product available in bag | Pass |
 |  | If product has sizes the Sizes field is required  | A size is already set as selected | Can't set this field without any size | Pass |
 |  | If product has shoesize the shoesize field is required  | A size is already set as selected | Can't set this field without any size | Pass |
+| Reviews | Reviews for individual products available | Navigate to product review section | Reviews visible or message displayed advising "There are no reviews for <product-name> yet. Why don't you add one?" | Pass |
+|  | Add a review form adds review to product details page | While logged in navigate to product review section, fill out form, click add review | Review visible in reviews section | Pass |
+|  | User must be logged in to add review to product details page | While not logged in navigate to product review section, attempt to leave review | Message revealed "Please log in to add a review of a product." | Pass |
 
 ##### **Add Product**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
@@ -179,6 +186,19 @@ The site was tested on these devices:
 | ------------- |-------------| -----|  ---------- | :----:|
 | View Items | Correct products are in the checkout | Add products to bag, click Secure Checkout | Expected products are in the checkout product list | Pass |
 | Form Validation | Required fields must be completed to complete  | Attempt to check out without filling in a required field | Error message "Please fill in this field" | Pass |
+
+##### **Footer**
+| Feature        | Expected           | Testing  | Result | Pass/Fail |
+| ------------- |-------------| -----|  ---------- | :----:|
+| Subscribe to NewsLetter | Every users can subscribe to the Newsletter | Log in as non-superuser, and a non-log in and attempt to subscribe | A successful message appears "Thank you for subscribing!" | Pass |
+| NewsLetter Form Validation | Required fields must be completed to subscribe to the NewsLetter  | Attempt to subscribe without filling in a required field | Error message "Please enter a valid email address" | Pass |
+| View Contact Us Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Contact Us Page | Redirected to the Contact Us Page | Pass |
+| Contact Us Form Validation | Required fields must be completed to submit the enquiry  | Attempt to submit without filling in a required field | Error message "Please fill in this field" | Pass |
+| View Facebook Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Facebook Page| Redirected to an external page: Site Facebook Page| Pass |
+| View Privacy Policy Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Privacy Policy Page | Redirected to the Privacy Policy Page as external page | Pass |
+| View Terms and Conditions Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Terms and Conditions Page | Redirected to the Terms and Conditions Page as external page | Pass |
+| View Delivery Info Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Delivery Info Page | Redirected to the Delivery Info Page | Pass |
+| View FAQs Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to FAQs Page | Redirected to the FAQs Page | Pass |
 
 --- 
 
