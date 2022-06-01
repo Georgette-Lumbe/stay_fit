@@ -159,15 +159,13 @@
             <h4 class="mb-0">Add your review here.</h4>
          </div>
          <hr>
-         <div class="row">
+         <div class="row text-center">
             <div class="col-12">
                <form method="POST" action= "{% url 'add_review' product.id %}#reviews" class="form mb-2" enctype="multipart/form-data">
-                   {% csrf_token %}
-
-                   {% for field in form %}
-                        {{ field | as_crispy_field }}
-                   {% endfor %}
                    
+                  {% csrf_token %}
+                  {{ review_form | crispy }}
+                      
                   <hr>
                   <div class="text-right">
                      <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
@@ -176,7 +174,7 @@
                </form>
             </div>
             {% else %}
-            <div class="col-md-8">
+            <div class="col-md-12">
                <h6 class="mb-0">Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
             </div>
             {% endif %}           
