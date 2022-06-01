@@ -1,229 +1,183 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
-  <head>
 
+<head> 
     {% block meta %}
-    <!-- Meta tags  -->
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description"
-            content="Buy Fitness Equipments, sportswear and trainers to get a good workout">
-        <meta name="keywords" content="fitness, trainers, sportswear, equipments, clothes, sport, workout, home fitness, women, men, exercises, machine">
-    {% endblock %}
-    <!-- End meta tags  -->
-
+	<!-- Meta tags  -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Buy Fitness Equipments, sportswear and trainers to get a good workout">
+	<meta name="keywords" content="fitness, trainers, sportswear, equipments, clothes, sport, workout, home fitness, women, men, exercises, machine"> {% endblock %}
+	<!-- End meta tags  -->
+    
     {% block extra_meta %}
     {% endblock %}
-
+    
     {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-        <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
-    {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap">
+	<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+	<link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+    {% endblock %} 
+    
+    {% block extra_css %} 
+    {% endblock %} 
+    
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/a4b5e1a5a3.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
+	<script src="https://kit.fontawesome.com/a4b5e1a5a3.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Stripe -->
+	<script src="https://js.stripe.com/v3/"></script> 
+    {% endblock %} 
+
+    {% block extra_js %} 
     {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+	<title>Stay Fit {% block extra_title %}{% endblock %}</title>
+</head>
 
-    <title>Stay Fit {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0">Stay Fit</h2>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <!-- Search Bar -->
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Find Something">
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- Navbar Links -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        €{{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        €0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
-            </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
-            </div>            
-        </div>
-    </header>
-
-    {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
-    {% endif %}
-
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
-
-    <footer>
-        <div class="container main-dark-bg text-white py-4" style="max-width: 100%;">
-          <div class="row mt-5 mx-5">
-            <div class="col-12 col-md-9">
-              <h3>StayFIT</h3>
-              <small class="d-block mb-3 text-pale">&copy; 2022 Educational Purpose only</small>
-              <!-- Begin Mailchimp Signup Form -->
-              <div id="mc_embed_signup" class="col-12 col-md-6 px-0">
-                <form
-                  action="https://herokuapp.us20.list-manage.com/subscribe/post?u=e9ae69d173507c735c0ef62b5&amp;id=0f95464024"
-                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate px-0 my-0"
-                  target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-                    <h5 class="mx-0 my-0">Subscribe to our Newsletter</h5>
-                    <div class="indicates-required"><span class="asterisk my-0">*</span> indicates required</div>
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                      </label>
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
-                    <div id="mce-responses" class="clear foot">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                        name="b_e9ae69d173507c735c0ef62b5_0f95464024" tabindex="-1" value=""></div>
-                    <div class="optionalParent">
-                      <div class="clear foot">
-                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        <p class="brandingLogo"><a href="http://eepurl.com/hRNyr5"
-                            title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener"><img
-                              src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                              class="mail-chimp-img" alt="Mailchimp logo"></a></p>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!--End mc_embed_signup-->
-            </div>
+<body>
+	<header class="container-fluid fixed-top">
+		<div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+				<a href="{% url 'home' %}" class="nav-link main-logo-link">
+					<h2 class="logo-font text-black my-0">Stay Fit</h2> </a>
+			</div>
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+				<!-- Search Bar -->
+				<form method="GET" action="{% url 'products' %}">
+					<div class="input-group w-100">
+						<input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Find Something">
+						<div class="input-group-append">
+							<button class="form-control btn btn-black border border-black rounded-0" type="submit"> <span class="icon">
+                        <i class="fas fa-search"></i>
+                        </span> </button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- Navbar Links -->
+			<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+				<ul class="list-inline list-unstyled text-center text-lg-right my-0">
+					<li class="list-inline-item dropdown">
+						<a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="text-center">
+								<div><i class="fas fa-user fa-lg"></i></div>
+								<p class="my-0">My Account</p>
+							</div>
+						</a>
+						<div class="dropdown-menu border-0" aria-labelledby="user-options"> {% if request.user.is_authenticated %} {% if request.user.is_superuser %} <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a> {% endif %} <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a> <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a> {% else %} <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a> <a href="{% url 'account_login' %}" class="dropdown-item">Login</a> {% endif %} </div>
+					</li>
+					<li class="list-inline-item">
+						<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+							<div class="text-center">
+								<div><i class="fas fa-shopping-bag fa-lg"></i></div>
+								<p class="my-0"> {% if grand_total %} €{{ grand_total|floatformat:2 }} {% else %} €0.00 {% endif %} </p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row bg-white">
+			<nav class="navbar navbar-expand-lg navbar-light w-100">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> {% include 'includes/mobile-top-header.html' %} {% include 'includes/main-nav.html' %} </nav>
+		</div>
+		<div id="delivery-banner" class="row text-center">
+			<div class="col bg-black text-white">
+				<h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4> </div>
+		</div>
+	</header> {% if messages %}
+	<div class="message-container"> {% for message in messages %} {% with message.level as level %} {% if level == 40 %} {% include 'includes/toasts/toast_error.html' %} {% elif level == 30 %} {% include 'includes/toasts/toast_warning.html' %} {% elif level == 25 %} {% include 'includes/toasts/toast_success.html' %} {% else %} {% include 'includes/toasts/toast_info.html' %} {% endif %} {% endwith %} {% endfor %} </div> {% endif %} {% block page_header %} {% endblock %} {% block content %} {% endblock %}
+	<footer>
+		<div class="container main-dark-bg text-white py-4" style="max-width: 100%;">
+			<div class="row mt-5 mx-5">
+				<div class="col-12 col-md-9">
+					<h3>StayFIT</h3> <small class="d-block mb-3 text-pale">&copy; 2022 Educational Purpose only</small>
+					<!-- Begin Mailchimp Signup Form -->
+					<div id="mc_embed_signup" class="col-12 col-md-6 px-0">
+						<form action="https://herokuapp.us8.list-manage.com/subscribe/post?u=deb756b20d43cb1a8acea3e20&amp;id=b86bc23885" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<h4>Subscribe</h4>
+                                <p>Get exclusive offers and discounts codes by subscribing to our monthly newsletter</p>
+								<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div>
+								<div id="mce-responses" class="clear foot">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_deb756b20d43cb1a8acea3e20_b86bc23885" tabindex="-1" value="">
+								</div>
+								<div class="optionalParent">
+									<div class="clear foot">
+										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+										<p class="brandingLogo">
+											<a href="http://eepurl.com/h3q2n1" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+				</div>
+				<div class="col-12 col-md-3">
+					<h5 class="text-white">About the site</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="link-secondary text-white" href="{% url 'delivery' %}">Delivery Info</a></li>
+						<li><a class="link-secondary text-white" href="{% url 'faqs' %}">FAQs</a></li>
+						<li><a class="link-secondary text-white" href="{% url 'contact' %}">Contact Us</a></li>
+					</ul> <a href="https://www.termsfeed.com/live/fa84b598-614f-4a9a-aae1-73834d00f32f" class="link-secondary text-white" target="_blank" rel="noopener" aria-label="Open Privacy Policy page in new tab">Privacy Policy</a>
+					<br> <a href="https://www.termsfeed.com/live/a7af35dd-282f-4dd5-bd4c-279c9f0381cb" class="link-secondary text-white" target="_blank" rel="noopener" aria-label="Open Terms and Conditions page in new tab">Terms and Conditions</a>
+					<br>
+					<p class="mt-2">
+						<a href="https://www.facebook.com/Stay-Fit-104817672255204" class="link-secondary text-white lead h4" target="_blank" rel="noopener" aria-label="Open our facebook page in new tab"> <i class="fab fa-facebook-square"></i> Find us on Facebook </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer> 
     
-            <div class="col-12 col-md-3">
-              <h5 class="text-white">About the site</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary text-white" href="{% url 'delivery' %}">Delivery Info</a></li>
-                <li><a class="link-secondary text-white" href="{% url 'faqs' %}">FAQs</a></li>
-                <li><a class="link-secondary text-white" href="{% url 'contact' %}">Contact Us</a></li>
-              </ul>
-              <a href="https://www.termsfeed.com/live/fa84b598-614f-4a9a-aae1-73834d00f32f"
-                class="link-secondary text-white" target="_blank" rel="noopener"
-                aria-label="Open Privacy Policy page in new tab">Privacy Policy</a>
-              <br>
-                <a href="https://www.termsfeed.com/live/a7af35dd-282f-4dd5-bd4c-279c9f0381cb"
-                class="link-secondary text-white" target="_blank" rel="noopener"
-                aria-label="Open Terms and Conditions page in new tab">Terms and Conditions</a>
-    
-              <br>
-              <p class="mt-2">
-                <a href="https://www.facebook.com/Stay-Fit-104817672255204" class="link-secondary text-white lead h4"
-                  target="_blank" rel="noopener" aria-label="Open our facebook page in new tab">
-                  <i class="fab fa-facebook-square"></i> Find us on Facebook </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    {% endblock %}
+	<script type="text/javascript">
+	$('.toast').toast('show');
+	</script>
 
-    
-  </body>
+    <!--Mailchimp script-->
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script type='text/javascript'>
+	(function($) {
+		window.fnames = new Array();
+		window.ftypes = new Array();
+		fnames[0] = 'EMAIL';
+		ftypes[0] = 'email';
+		fnames[1] = 'FNAME';
+		ftypes[1] = 'text';
+		fnames[2] = 'LNAME';
+		ftypes[2] = 'text';
+		fnames[3] = 'ADDRESS';
+		ftypes[3] = 'address';
+		fnames[4] = 'PHONE';
+		ftypes[4] = 'phone';
+		fnames[5] = 'BIRTHDAY';
+		ftypes[5] = 'birthday';
+	}(jQuery));
+	var $mcj = jQuery.noConflict(true);
+	</script> 
+    {% endblock %} 
+</body>
 </html>
