@@ -275,6 +275,10 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+footer {
+    background-color: #000;
+}
+
 
 
 /* -------------------------------- Media Queries */
