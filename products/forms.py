@@ -1,8 +1,10 @@
 """ Imort """
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import Product, Category, Review
 
+
+# Product Form
 
 class ProductForm(forms.ModelForm):
     class Meta:
@@ -24,3 +26,11 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
+
+
+# Review Form
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['review_title', 'review']

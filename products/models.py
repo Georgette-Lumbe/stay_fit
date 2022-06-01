@@ -1,6 +1,9 @@
 """Import"""
 from django.db import models
+from django.contrib.auth.models import User
 
+
+# Category Model
 
 class Category(models.Model):
     """Category Model"""
@@ -18,6 +21,8 @@ class Category(models.Model):
         """get_friendly function"""
         return self.friendly_name
 
+
+# Product Model
 
 class Product(models.Model):
     """Product Model"""
@@ -38,3 +43,24 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+# Review Model
+
+class Review(models.Model):
+    product = models.ForeignKey(
+        Product, default=None, on_delete=models.CASCADE,
+        related_name="reviews"
+        )
+    review_author = models.ForeignKey(
+        User, on_delete=models.PROTECT, null=True, blank=True)
+    review = models.TextField(max_length=1000)
+    review_title = models.TextField(max_length=254)
+    added_on = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ['-added_on']
+
+    def __str__(self):
+        return self.review_title

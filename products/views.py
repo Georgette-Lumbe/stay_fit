@@ -6,9 +6,9 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
-# Create your views here.
+# All Products views
 
 
 def all_products(request):
@@ -65,6 +65,8 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
+# Product Detail views
+
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
@@ -76,6 +78,8 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
+# Add Product views
 
 @login_required
 def add_product(request):
@@ -104,6 +108,8 @@ def add_product(request):
 
     return render(request, template, context)
 
+
+# Edit Product views
 
 @login_required
 def edit_product(request, product_id):
@@ -136,6 +142,8 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+# Delete Product views
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
@@ -147,3 +155,31 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+# Reviews views
+
+@login_required
+def add_review(request, product_id):
+    """ Add a review of a product """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                review = form.save(commit=False)
+                review.product = product
+                review.review_author = request.user
+                review.save()
+                messages.success(
+                    request, 'Successfully added your review!')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(
+                    request, 'Failed to add review. Please ensure the form \
+                        is valid')
+    context = {
+        'form': form
+    }
+
+    return render(request, context)
