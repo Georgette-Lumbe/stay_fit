@@ -298,6 +298,10 @@ Header
 - Users not logged in can:
   - Access log in and register pages
 
+Footer
+
+    Consistent footer is present in all pages within the site which includes links to Delivery info, FAQs, Privacy policy, Terms and conditions and Contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
+
 [Go to top](#introduction)
 
 ## Features Left To Implement
@@ -320,7 +324,7 @@ Web site is carefully designed to give site visitors to easily navigate and find
 
 1. Facebook Page
 
-    ![]()
+    ![](static/docs/images/screenshots/facebook.png)
 
 2. Newsletter Sign up located in Footer
 
@@ -328,11 +332,11 @@ Web site is carefully designed to give site visitors to easily navigate and find
 
 3. Privacy Policy Page
 
-    ![]()
+    ![](static/docs/images/screenshots/privacy_policy.png)
 
 4. Terms and Conditions Page
 
-    ![]()
+    ![](static/docs/images/screenshots/terms_and_conditions.png)
 
 ### SEO
 
