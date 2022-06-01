@@ -92,6 +92,8 @@ This is the last of five milestone projects that the developer is required to co
 | 25  |   |  see how products are performing | see which products are performing best. |
 | 26   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. |
 | 27   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. |
+| Live Chat |
+| 11  | User/Shopper | see a live chat Icon | chat and ask questions directly to an agent. |
 
 
 ## Wireframes
@@ -302,12 +304,16 @@ Footer
 
     Consistent footer is present in all pages within the site which includes links to Delivery info, FAQs, Privacy policy, Terms and conditions and Contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
 
+- **Live Chat**
+ - All users can:
+    - View the live chat Icon in every page
+    - Send a message into a live chat
+
 [Go to top](#introduction)
 
 ## Features Left To Implement
 
 - I would like to implement a feature where if users log out of the site with items in their bags the items would be there upon log in again. Currently this is not the case.
-- A chat bot where users can ask questions on the site.
 - The ability to add many filters to their search criteria eg colour, category.
 - The ability for users to change their username.
 - The ability to view, add comments, edit and delete their own blog posts.
@@ -746,6 +752,8 @@ Once the project been loaded into the IDE it is necessary to install the necessa
     - Used to build Newsletter
 32. [Terms Feed](https://www.termsfeed.com/privacy-policy-generator/)
     - Used to generate the Privacy Policy and Terms and conditions
+33. [Tawk to](https://www.tawk.to/)
+    - Used to implement a Live Chat
 
 ---
 

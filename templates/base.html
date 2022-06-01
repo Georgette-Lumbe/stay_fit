@@ -9,7 +9,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Buy Fitness Equipments, sportswear and trainers to get a good workout">
-	<meta name="keywords" content="fitness, trainers, sportswear, equipments, clothes, sport, workout, home fitness, women, men, exercises, machine"> {% endblock %}
+	<meta name="keywords" content="fitness, trainers, sportswear, equipments, clothes, sport, workout, home fitness, women, men, exercises, machine">
+    <!-- Tawk to -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    {% endblock %}
 	<!-- End meta tags  -->
     
     {% block extra_meta %}
@@ -91,14 +94,32 @@
 		</div>
 		<div class="row bg-white">
 			<nav class="navbar navbar-expand-lg navbar-light w-100">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> {% include 'includes/mobile-top-header.html' %} {% include 'includes/main-nav.html' %} </nav>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                {% include 'includes/mobile-top-header.html' %} {% include 'includes/main-nav.html' %} </nav>
 		</div>
 		<div id="delivery-banner" class="row text-center">
 			<div class="col bg-black text-white">
 				<h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4> </div>
 		</div>
-	</header> {% if messages %}
-	<div class="message-container"> {% for message in messages %} {% with message.level as level %} {% if level == 40 %} {% include 'includes/toasts/toast_error.html' %} {% elif level == 30 %} {% include 'includes/toasts/toast_warning.html' %} {% elif level == 25 %} {% include 'includes/toasts/toast_success.html' %} {% else %} {% include 'includes/toasts/toast_info.html' %} {% endif %} {% endwith %} {% endfor %} </div> {% endif %} {% block page_header %} {% endblock %} {% block content %} {% endblock %}
+	</header> 
+    {% if messages %}
+	<div class="message-container"> 
+        {% for message in messages %} {% with message.level as level %} 
+        {% if level == 40 %} {% include 'includes/toasts/toast_error.html' %} 
+        {% elif level == 30 %} {% include 'includes/toasts/toast_warning.html' %} 
+        {% elif level == 25 %} {% include 'includes/toasts/toast_success.html' %} 
+        {% else %} {% include 'includes/toasts/toast_info.html' %} 
+        {% endif %} 
+        {% endwith %} 
+        {% endfor %} 
+    </div>
+    {% endif %}
+
+    {% block page_header %} 
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
 	<footer>
 		<div class="container main-dark-bg text-white py-4" style="max-width: 100%;">
 			<div class="row mt-5 mx-5">
@@ -177,7 +198,21 @@
 		ftypes[5] = 'birthday';
 	}(jQuery));
 	var $mcj = jQuery.noConflict(true);
-	</script> 
+	</script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6297a79c7b967b1179926b0e/1g4g6df8k';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     {% endblock %} 
 </body>
 </html>

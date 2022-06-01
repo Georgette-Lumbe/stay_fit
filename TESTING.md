@@ -30,33 +30,37 @@
 | 2  |   | be able to add, edit quantity and remove items from my bag | buy them if after browsing. || Pass |
 | 3  |   | view a specific category of products | quickly find products I'm interested in without having to search through all products. || Pass |
 | 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. || Pass |
+| 5  |   | view and add reviews | make a decision based on the comments, I can let other people know what I think of the product. || Pass |
 | Registration and Accounts |
-| 5  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. || Pass |
-| 6  |   | recover my account if password forgot  | gain access to my account. || Pass |
-| 7  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information || Pass |
-| 8  |   | login and logout functionality | I can gain access to my account. || Pass |
+| 6  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. || Pass |
+| 7  |   | recover my account if password forgot  | gain access to my account. || Pass |
+| 8  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information || Pass |
+| 9  |   | login and logout functionality | I can gain access to my account. || Pass |
 | Searching products |
-| 9  | User/Shopper | search for specific products | find products I am interested in buying. || Pass |
-| 10  |   | see the number of results in a search that I have performed | easily see how many products are available. || Pass |
-| 11  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. || Pass |
+| 10  | User/Shopper | search for specific products | find products I am interested in buying. || Pass |
+| 11  |   | see the number of results in a search that I have performed | easily see how many products are available. || Pass |
+| 12  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. || Pass |
 | Checkout  |
-| 12  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
-| 13  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
-| 14  |   | easily select the correct size | ensure I have ordered the right size for my project. |
-| 15  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
-| 16  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
-| 17  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
-| 18 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
+| 13  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. || Pass |
+| 14  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. || Pass |
+| 15  |   | easily select the correct size | ensure I have ordered the right size for my project. |
+| 16  |   | adjust the number of products to buy | update the order without going back to the product page. || Pass |
+| 17  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. || Pass |
+| 18  |   | remove items from my basket | I can ensure I am paying for only products that I want. || Pass |
+| 19 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. || Pass |
+| Communication  |
+| 20  | Store owner/Admin | view the contact page | contact the admin of the site whenever I have an enquiry. || Pass |
+| 21  |   | | see a live chat Icon | chat and ask questions directly to an agent. |
+
 | Admin/Management  |
-| 19  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
-| 20  |   | navigate through Product management | add a product directly from the website || Pass |
-| 21  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
-| 22  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
-| 23  |   |  see how products are performing | see which products are performing best. || Pass |
-| 24  |   | view and add reviews | make a decision based on the comments, I can let other people know what I think of the product. || Pass |
-| 25  |   | view the contact page | contact the admin of the site whenever I have an enquiry. || Pass |
-| 26   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. || Pass |
-| 27   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. || Pass |
+| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  || Pass |
+| 23  |   | navigate through Product management | add a product directly from the website || Pass |
+| 24  |   | update a product | have the ability to change product details, price, availability, and images. || Pass |
+| 25  |   | delete a product | ensure my site is up to date and remove items no longer on sale. || Pass |
+| 26  |   | see how products are performing | see which products are performing best. || Pass |
+| 27  |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. || Pass |
+| 28  |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. || Pass |
+
 
 ---
 
@@ -108,6 +112,7 @@ The site was tested on these devices:
 | ------------- |-------------| -----|  ---------- |:----:|
 | Shop Now | Clicking the shop now button takes users to view all products | Click shop button | User redirected to the products page | Pass |
 | Shopping Options | Clicking All products, Equipments, Trainers, and Sportswear Links lead to different parts of shop | Click All products, Equipments, Trainers, and Sportswear | Redirected to the relevant products in shop | Pass |
+| Live Chat | Clicking thelive chat Icon takes users to start a conversation with agent | chat and ask questions directly to an agent. | An online Agent answers | Pass |
 
 ### **Register Page**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
