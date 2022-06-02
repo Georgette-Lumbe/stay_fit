@@ -326,6 +326,23 @@ Automated testing of forms was completed to:
 - Test to see if street_address1 field is required
 - check the field only displays certain fields
 
+## **Blog**
+Automated testing of forms was completed to:
+  
+- Test to see if blog post title field is required
+- Test to see if blog post content field is required
+- Test the field only displays certain fields
+
+Automated testing of views was completed to:
+
+- Test the blog page loads correctly
+- Test the url works when loading the page
+- Test the correct template loads on page load
+- Test the blog page is accessible by name
+- Test blog posts display as expected
+- Test to see if the post string method returns the title as expected
+
+
 [Go to top](#testing-user-stories "#Goto testing user stories")
 
 # Code Validation
