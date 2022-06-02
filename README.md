@@ -67,33 +67,34 @@ This is the last of five milestone projects that the developer is required to co
 | 4  |   | select and view individual product details | view a larger image of product, description, price, and a purchase option. |
 | 5  |   | view and add reviews | make a decision based on the comments, I can let other people know what I think of the product. |
 | 6  |   | view the contact page | contact the admin of the site whenever I have an enquiry. |
+| 7  |   | read the blog | have some advice, and tips on how and why to stay fit. |
 | Registration and Accounts |
-| 7  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. |
-| 8  |   | recover my account if password forgot  | gain access to my account. |
-| 9  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information |
-| 10  |   | login and logout functionality | I can gain access to my account. |
+| 8  | User/Shopper | set up an account | I can create an account to store my details such as purchase history and address. |
+| 9  |   | recover my account if password forgot  | gain access to my account. |
+| 10  |   | have a personalized user profile | view my personal order history and order confirmations, and save my payment and address information |
+| 11  |   | login and logout functionality | I can gain access to my account. |
 | Searching products |
-| 11  | User/Shopper | search for specific products | find products I am interested in buying. |
-| 12  |   | see the number of results in a search that I have performed | easily see how many products are available. |
-| 13  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. |
+| 12  | User/Shopper | search for specific products | find products I am interested in buying. |
+| 13  |   | see the number of results in a search that I have performed | easily see how many products are available. |
+| 14  |   | sort the products based on price, name, category and rating  | better identify items that I would like to buy. |
 | Checkout  |
-| 14  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. |
-| 15  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. |
-| 16  |   | easily select the correct size | ensure I have ordered the right size for my project. |
-| 17  |   | adjust the number of products to buy | update the order without going back to the product page. |
-| 18  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. |
-| 19  |   | remove items from my basket | I can ensure I am paying for only products that I want. |
-| 20 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. |
+| 15  | Shopper | view the full list of all products in my basket with prices and subtotal/total  | I can ensure that I have everything in my basket that I wanted. |
+| 16  |   | enter my address and payment details for purchase | pay for items and have them delivered to the correct address. |
+| 17  |   | easily select the correct size | ensure I have ordered the right size for my project. |
+| 18  |   | adjust the number of products to buy | update the order without going back to the product page. |
+| 19  |   | pay for my items in a manner that is secure and familiar | be sure that my card details and payment are handled securely. |
+| 20  |   | remove items from my basket | I can ensure I am paying for only products that I want. |
+| 21 |   | get a confirmation email of my purchase | be reassured that my purchase has gone through and is correct. |
 | Admin/Management  |
-| 21  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  |
-| 22  |   | navigate through Product management | add a product directly from the website |
-| 23  |   | update a product | have the ability to change product details, price, availability, and images. |
-| 24  |   | delete a product | ensure my site is up to date and remove items no longer on sale. |
-| 25  |   |  see how products are performing | see which products are performing best. |
-| 26   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. |
-| 27   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. |
+| 22  | Store owner/Admin | login and logout to the site administration | manage my site and secure the site when I logout  |
+| 23  |   | navigate through Product management | add a product directly from the website |
+| 24  |   | update a product | have the ability to change product details, price, availability, and images. |
+| 25  |   | delete a product | ensure my site is up to date and remove items no longer on sale. |
+| 26  |   |  see how products are performing | see which products are performing best. |
+| 27   |   | add a Facebook Page | promote our site to Facebook users and have a better chance in sales so that get the attention of the potential customers. |
+| 28   |   | add SEO | make sure our site is visible to users who seek related product information on the web so that get the attention of the potential customers. |
 | Live Chat |
-| 11  | User/Shopper | see a live chat Icon | chat and ask questions directly to an agent. |
+| 29  | User/Shopper | see a live chat Icon | chat and ask questions directly to an agent. |
 
 
 ## Wireframes
@@ -232,7 +233,10 @@ The navigation bar displays different links depending on whether the user is log
 | Profile  | &#10007;  | &#10003;  | &#10003;  |
 | Log Out  | &#10007;  | &#10003;  | &#10003;  |
 | Search  | &#10003;  | &#10003;  | &#10003;  |
+| Contact  | &#10003;  | &#10003;  | &#10003;  |
+| Blog  | &#10003;  | &#10003;  | &#10003;  |
 | Add Product | &#10007; |&#10007;  |  &#10003; |
+| Live Chat  | &#10003;  | &#10003;  | &#10003;  |
 
 ## Features Implemented
 
@@ -302,12 +306,17 @@ Header
 
 Footer
 
-    Consistent footer is present in all pages within the site which includes links to Delivery info, FAQs, Privacy policy, Terms and conditions and Contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
+    Consistent footer is present in all pages within the site which includes links to Delivery info, FAQs, Privacy policy, Blog, Terms and conditions and Contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
 
 - **Live Chat**
  - All users can:
     - View the live chat Icon in every page
     - Send a message into a live chat
+
+- **Blog**
+
+- Guest and Logged in users can:
+  - View blog post
 
 [Go to top](#introduction)
 
@@ -316,8 +325,10 @@ Footer
 - I would like to implement a feature where if users log out of the site with items in their bags the items would be there upon log in again. Currently this is not the case.
 - The ability to add many filters to their search criteria eg colour, category.
 - The ability for users to change their username.
-- The ability to view, add comments, edit and delete their own blog posts.
+- The ability add comments, edit and delete their own blog posts.
 - A star rating or upvote functionality for the products and blog posts.
+- A wishlist and Discount functionalities
+- The ability to comment and like a review
 
 ## Strategy
 
@@ -789,6 +800,8 @@ This project is primarily built using:
 * [Automated Tests - Day 6 - Django Bootcamp](https://www.youtube.com/watch?v=5E_xLmQXOZg) and [Testing Django with Travis CI](https://www.youtube.com/watch?v=uFRJsbV8W_4) help me to test my folders.
 
 * [Tawk to live chat feature with Sharma Coder](https://www.youtube.com/watch?v=RoJH1HfHNpU&t=194s) help for implementing the live chat with Tawk to.
+
+* The blog content was obtained from [Stay Fit Blog](https://www.stay.fit/blog)
 
 ## Code
 

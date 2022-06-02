@@ -192,6 +192,11 @@ The site was tested on these devices:
 | View Items | Correct products are in the checkout | Add products to bag, click Secure Checkout | Expected products are in the checkout product list | Pass |
 | Form Validation | Required fields must be completed to complete  | Attempt to check out without filling in a required field | Error message "Please fill in this field" | Pass |
 
+#### **Blog Page**
+| Feature        | Expected           | Testing  | Result | Pass/Fail |
+| ------------- |-------------| -----|  ---------- | ---- |
+| Blog posts visible | Blog page shows the blog posts | Open Blog page and view posts | Posts visible | Pass |
+
 ##### **Footer**
 | Feature        | Expected           | Testing  | Result | Pass/Fail |
 | ------------- |-------------| -----|  ---------- | :----:|
@@ -204,6 +209,7 @@ The site was tested on these devices:
 | View Terms and Conditions Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Terms and Conditions Page | Redirected to the Terms and Conditions Page as external page | Pass |
 | View Delivery Info Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to Delivery Info Page | Redirected to the Delivery Info Page | Pass |
 | View FAQs Page | Page should be accessible from anywhere and everyone in the site | Log in as non-superuser, and a non-log in and attempt to access to FAQs Page | Redirected to the FAQs Page | Pass |
+|   | Clicking 'Click here to the blog page' takes user to the Blog page | Click 'Click here to the blog page' | Redirected to Blog Page | Pass |
 
 --- 
 

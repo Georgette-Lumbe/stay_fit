@@ -6,7 +6,7 @@ def blog(request):
     """
     View all blog posts
     """
-    posts = Post.objects.all()
+    posts = Post.objects.all()  # Get the post id
     context = {
         'posts': posts
     }
