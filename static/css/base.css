@@ -320,7 +320,8 @@ footer {
 }
 
 .contact,
-.blog {
+.blog,
+.error {
     margin-top: 15%;
     margin-bottom: 3%;
 }
