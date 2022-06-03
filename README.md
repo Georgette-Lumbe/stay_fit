@@ -463,11 +463,34 @@ Request req_aPjY4IbnYrI832: Invalid currency: euro. Stripe currently supports th
     "--errors-only"],`
     * The above fix had to another error : "django was not configured. For more information run pylint ---load-plugins=pylint_django --help-msg=django-not-configured". And the developper visited [this post](https://stackoverflow.com/questions/65761250/pylint-django-raising-error-about-django-not-being-configured-when-thats-not-th) and this [video](https://www.youtube.com/watch?v=SXNLt6FRizc) to fix the problem.
 
-8. **Bugs non fixed**
+
+8. **Programming Error**
+
+    * Once the site was deployed, there were several pages (contact, delivery info, product details, etc.) that did not display and presented the server error 500.
+    * To solve this, the developer followed these steps:
+    1. Set debug to true to see where the problem comes from
+    2. After having seen where the problem came from (It was because the data did not have a DATABASE_URL variable with your Heroku PostGres database string in env.py
+    3. Add PostGres database string from Heroku config vars to env.py file as a variable: DATABASE_URL
+    4. python3 manage.py migrate
+    5. And deploy
+
+9. **Blog**
+
+    The blog data did not display on the deploy site, the developer took this steps to solve this issue:
+    1. comment out the PostGres variable in environment variables
+    2. python manage.py dumpdata blog > blog.json
+    3. Connect to postgres db
+    4. python manage.py loaddata blog.json
+    5. Deploy
+
+
+10. **Bugs non fixed**
 
     	- Sub-titles in the Shopping bag are not on the same column with details.
 
-        - Footer in product_detail have not a right width
+        - Footer in product_detail have not a right width and position
+
+        - Chat Box is not displayed on the deployed site, I think it's because chat box scripts is creating by a third-party raison why the scripts will NOT load to the static file storage.
 
 ---
 
